@@ -187,11 +187,11 @@ h6 {
 .content.sidebar {
 	width: 500px;
 	float: left;
-	margin-top: 40px;
+	margin-top: 20px;
 	border-right: 1px solid #e7e7e7;
 }
 .sidebar {
-	width: 300px;
+	width: 320px;
 	float: left;
 }
 blockquote {
@@ -323,30 +323,6 @@ a.scrolldown {
 	text-transform: uppercase;
 	color: #FFF;
 	font-weight: 300;
-}
-
-/******************************************************************
-	Sidebar
-******************************************************************/
-.widget {
-	width: 300px;
-	margin: 50px 10px;
-	margin-bottom: 0px;
-	float: left;
-}
-.widget a {
-	font-size: 12px;
-}
-.widget li {
-	margin-top: 4px;
-}
-.widget.twitter a.tweet {
-	float: left;
-	margin-top: 20px;
-	min-height: 30px;
-	background-image: url(../img/twitterwidgeticon.png);
-	background-repeat: no-repeat;
-	padding-left: 35px;
 }
 
 /******************************************************************
@@ -576,14 +552,21 @@ div.section.block.blog .hover a.readmore {
 	About Us
 ******************************************************************/
 div.person {
-	width: 920px;
-	margin: 20px auto;
+	width: 340px;
+	margin: 40px;
 }
 div.person div.image {
-	width: 340px;
-	height: 250px;
-	float: left;
-	margin-bottom: 40px;
+	width: 200px;
+	height: 100px;
+	float: center;
+	margin: 10px 50px;
+	border-radius: 20px;
+	background: url(../img/me.jpg) no-repeat center;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
 }
 div.person div.info {
 	width: 520px;
@@ -676,8 +659,14 @@ div.content article:last-child {
 }
 div.postimage {
 	float: left;
-	width: 430px;
-	height: 150px;
+	width: 431px;
+	height: 151px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, .8);
 }
 div.postimage img {
 	position: absolute;
