@@ -677,12 +677,12 @@ div.content article:last-child {
 div.postimage {
 	float: left;
 	width: 430px;
-	height: 170px;
+	height: 150px;
 }
 div.postimage img {
 	position: absolute;
 	width: 430px;
-	height: 170px;
+	height: 150px;
 }
 div.posthover {
 	opacity: 0;
@@ -690,7 +690,7 @@ div.posthover {
 	top: 0px;
 	left: 0px;
 	width: 430px;
-	height: 170px;
+	height: 150px;
 	background-color: rgba(96, 147, 231, 0.6);
 	-webkit-transition: opacity 0.4s;
 	-moz-transition: opacity 0.4s;
@@ -712,7 +712,7 @@ div.posthover a {
 	font-size: 24px;
 	text-align: center;
 	color: #FFF;
-	line-height: 170px;
+	line-height: 150px;
 }
 div.postinfo {
 	float: right;

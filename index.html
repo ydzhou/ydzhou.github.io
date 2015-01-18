@@ -79,6 +79,21 @@
 			</article>
 			<!-- End Article -->
 			
+			<!-- Start Article -->
+			<article class="post">				
+				<div class="hover">	
+					<div class="postimage">
+						<img src="img/pc.png">
+						<div class="posthover"><a class="openpost" href="javascript:void(0);" data-id="2">read more</a></div>
+					</div>
+				</div>
+
+				<a href=""><h3>Parallel Computing on the Jacobian Solver</h3></a>
+				<p>A Jobian solver is a good tool so solve complex matrix while suffers severe performance reduce in terms of run-time when deals with large-scale matrix. That's why I start to exploit what parallel computing can bring on.</p>
+
+			</article>
+			<!-- End Article -->
+			
 			<!-- Clear :) -->
 			<div class="clear"></div>
 		</div>
@@ -103,6 +118,21 @@
 				<p>
 					Get excited? Try it now: <a href="http://gamesyoumiss.herokuapp.com/recom/">http://gamesyoumiss.herokuapp.com/recom/</a>
 				</p>
+			</article>
+			<!-- End Article -->
+			
+			<!-- Start Article -->
+			<article class="post full" data-id="2">				
+				<div class="hover">	
+					<div class="postimage">
+						<img src="img/pc.png">
+						<div class="posthover"><a class="backtoblog" href="javascript:void(0);" data-id="1">back to projects</a></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<h3>Parallel Computing on the Jacobian Solver</h3>
+				<p>Paralle computing is a quit interesting way to distribute the workload among all the available workers, then significantly reduce the run-time relying on their teamwork. It is a smart way to tackle performance issue when we do not have high efficiency on a single processing unit. The Jacobian solver apply a update equation in each iteration, and does not require data from previous iterations. Therefore, we can get the value of the next iteration, based on that of current iteration. This property allows us to do the parallel computing within each iteration.</p>
+				<p>I have used MPI technique to implement a parallelized Jacobian Solver. The performance gain is significant, thanks to the power of parallel computing. With the size of matrix increasing, the overhead of communications between each processor has less impact on performance. It is very practical to apply in the real-world problem.</p>
 			</article>
 			<!-- End Article -->
 
