@@ -352,27 +352,10 @@ a.logo {
 	background-image: url(../img/logo.png);
 	margin: 27px 0px 0px 40px;
 }
-ul.icon {
-	font-family: Helvetica, Arial, sans-serif;
-	float: right;
-	margin: -20px 0px 0px 40px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-ul.icon li {
-	cursor: pointer;
-	display: inline-block;
-	padding: 30px 10px 31px 10px;
-}
-/*ul.icon li a {*/
-/*    font-family: FontAwesome;*/
-/*    font-size: 12px;*/
-/*    color: #444444*/
-/*}*/
 ul.mainmenu {
 	font-family: Helvetica, Arial, sans-serif;
 	float: left;
-	margin: -25px 0px 0px 40px;
+	margin: -22px 0px 0px 40px;
 	text-transform: uppercase;
 	font-weight: 300;
 }
