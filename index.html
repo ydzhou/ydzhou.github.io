@@ -23,7 +23,7 @@
 		<!-- <a href="#" class="logo"></a> -->
 		<ul class="mainmenu">
 			<li class="active"><a href="#home">Home</a></li>
-			<!-- <li><a href="#about">About Me</a></li> -->
+			 <li><a href="#about">About</a></li> 
 			<!-- <li><a href="#projects">Projects</a></li> -->
 			<li><a href="resume.pdf">Resume</a></li>
 			<li><a href="http://github.com/ydzhou">Github</a></li>
@@ -130,9 +130,9 @@
 					</div>
 				</div>
 				<div class="clear"></div>
-				<h3>Parallel Computing on the Jacobian Solver</h3>
+				<h3>Parallel Computing on a Jacobian Solver</h3>
 				<p>Paralle computing is a quit interesting way to distribute the workload among all the available workers, then significantly reduce the run-time relying on their teamwork. It is a smart way to tackle performance issue when we do not have high efficiency on a single processing unit. The Jacobian solver apply a update equation in each iteration, and does not require data from previous iterations. Therefore, we can get the value of the next iteration, based on that of current iteration. This property allows us to do the parallel computing within each iteration.</p>
-				<p>I have used MPI technique to implement a parallelized Jacobian Solver. The performance gain is significant, thanks to the power of parallel computing. With the size of matrix increasing, the overhead of communications between each processor has less impact on performance. It is very practical to apply in the real-world problem.</p>
+				<p>I have used MPI technique to implement a parallelized Jacobian Solver. Implemented Jacobian Solver is used to conduct simulation to estimate properties of a large-scale reservoir. The performance gain is significant, thanks to the power of parallel computing. With the size of matrix increasing, the overhead of communications between each processor has less impact on performance. It is very practical to apply in the real-world problem.</p>
 			</article>
 			<!-- End Article -->
 
@@ -145,17 +145,17 @@
 		<div id="sidebar" class="sidebar">
 
 			<div class="person">
+                <a name="about"></a>
 				<div class="image">
 				</div>
-				<h5>Howdy, welcome to my land!</h5>
-				<p></p>
-				<p>I am currently seeking a new grad Software Engineer position</p>
+                <h4 align="left">Howdy, welcome to my land!</h4>
+				<p>I am currently seeking a new grad Software Engineer position, interested in back-end development or BigData.</p>
 				<p></p>
 				<h5>A Little About Me</h5>
 				<p>The love of coding flows through my vein and its power drives me nuts. I hope one day I could master it. I am always get excited with crazy thoughts and inside this tiny machine, I could do everything to apply them into real products.</p>
 				<p>This is the site where I share products and projects that have been worked on in past years. I feel so interested and excited when I get them done, and can't wait to share with you.</p>
 				<p>Last Decemeber, I have graduated from Texas A&M University, and am looking forward to find a spot where I could carry on what I love, coding!</p>
-				<p>If you feel interested or have any question, feel free to shoot me a message.</p>
+				<p>Among all the coding stuff, I am mostly interested in web back-end development, information retrieval and BigData. If you feel interested or have any question, feel free to shoot me a message.</p>
 
 				<h5>Contact Me</h5>
 				<p>Email: albert.ydzhou AT gmail.com</p>
