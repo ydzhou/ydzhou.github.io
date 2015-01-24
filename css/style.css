@@ -562,8 +562,7 @@ div.person {
 div.person div.image {
 	width: 200px;
 	height: 100px;
-	float: center;
-	margin: 10px 50px;
+	margin: 10px 68px;
 	border-radius: 20px;
 	background: url(../img/me.jpg) no-repeat center;
 	-webkit-border-radius: 20px;
@@ -664,18 +663,18 @@ div.content article:last-child {
 div.postimage {
 	float: left;
 	width: 431px;
-	height: 151px;
+	height: 80px;
 	border-radius: 0px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-	box-shadow: 0 0 6px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, .8);
+	box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
 }
 div.postimage img {
 	position: absolute;
 	width: 430px;
-	height: 150px;
+	height: 80px;
 }
 div.posthover {
 	opacity: 0;
@@ -683,7 +682,7 @@ div.posthover {
 	top: 0px;
 	left: 0px;
 	width: 430px;
-	height: 150px;
+	height: 80px;
 	background-color: rgba(96, 147, 231, 0.6);
 	-webkit-transition: opacity 0.4s;
 	-moz-transition: opacity 0.4s;
@@ -705,7 +704,7 @@ div.posthover a {
 	font-size: 24px;
 	text-align: center;
 	color: #FFF;
-	line-height: 150px;
+	line-height: 80px;
 }
 div.postinfo {
 	float: right;
