@@ -337,9 +337,9 @@ a.scrolldown {
 	z-index: 9999;
 	background-color: #fff;
 	margin-top: -80px;
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 .menubar.alt {
 	background-color: #333333;
@@ -560,9 +560,9 @@ div.person {
 	margin: 40px;
 }
 div.person div.image {
-	width: 200px;
+	width: 40%;
 	height: 100px;
-	margin: 10px 68px;
+	margin: 0 auto;
 	border-radius: 20px;
 	background: url(../img/me.jpg) no-repeat center;
 	-webkit-border-radius: 20px;
@@ -572,7 +572,7 @@ div.person div.image {
 	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
 }
 div.person div.info {
-	width: 520px;
+	width: 100%;
 	float: right;
 	padding: 0px 30px;
 }
@@ -667,9 +667,9 @@ div.postimage {
 	border-radius: 0px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, .8);
+	box-shadow: 0 0 1px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 0 1px rgba(0, 0, 0, .4);
 }
 div.postimage img {
 	position: absolute;
