@@ -91,12 +91,12 @@ b {
 	font-weight: bold;
 }
 p {
-/*	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;*/
-	font-family: Times, "Times New Roman", serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+/*	font-family: Times, "Times New Roman", serif;*/
 	margin: 15px 0px;
-	line-height: 1.2em;
+	line-height: 1.4em;
 	color: #626262;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: justify;
 }
 h1 {
@@ -662,7 +662,7 @@ div.content article:last-child {
 }
 div.postimage {
 	float: left;
-	width: 430px;
+	width: 450px;
 	height: 50px;
 	border-radius: 0px;
 	-webkit-border-radius: 0px;
@@ -673,17 +673,19 @@ div.postimage {
 }
 div.postimage img {
 	position: absolute;
-	width: 430px;
+	width: 450px;
 	height: 50px;
 }
 div.posthover {
-	opacity: 0;
+	opacity: .1;
 	position: relative;
 	top: 0px;
 	left: 0px;
-	width: 430px;
+	width: 450px;
 	height: 50px;
-	background-color: rgba(96, 147, 231, 0.6);
+/*	background-color: rgba(96, 147, 231, 0.6);*/
+	background-color: #666666;
+	border-radius: 2px;
 	-webkit-transition: opacity 0.4s;
 	-moz-transition: opacity 0.4s;
 	-ms-transition: opacity 0.4s;
@@ -701,7 +703,7 @@ article.post .hover:hover div.postinfo h6, article.post .hover:hover div.postinf
 }
 div.posthover a {
 	display: block;
-	font-size: 24px;
+	font-size: 20px;
 	text-align: center;
 	color: #FFF;
 	line-height: 50px;
@@ -725,39 +727,6 @@ article.post h3 {
 article.post p {
 	clear: both;
 	padding-top: 4px; 
-}
-
-/******************************************************************
-	Contact
-******************************************************************/
-.contact {
-	text-align: center;
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #848484;
-	font-size: 16px;
-}
-input {
-	line-height: 50px;
-	font-size: 18px;
-	width: 500px;
-	height: 50px;
-	border: 1px solid #333333;
-	outline: none;
-	border-radius: 3px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-textarea {
-	line-height: 50px;
-	height: 200px;
-	font-size: 18px;
-	width: 500px;
-	border: 1px solid #333333;
-	outline: none;
-	border-radius: 3px;
-	margin-bottom: 20px;
-	text-align: center;
 }
 
 /******************************************************************
