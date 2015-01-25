@@ -79,7 +79,7 @@ a {
 	General
 ******************************************************************/								
 a {
-	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	font-size: 8pt;
 	color: #616161;
@@ -91,7 +91,7 @@ b {
 	font-weight: bold;
 }
 p {
-	/*font-family: Helvetica, Verdana, Arial, sans-serif;*/
+/*	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;*/
 	font-family: Times, "Times New Roman", serif;
 	margin: 15px 0px;
 	line-height: 1.2em;
@@ -100,42 +100,42 @@ p {
 	text-align: justify;
 }
 h1 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 40px;
 }
 h2 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 24px;
 }
 h3 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 20px;
 }
 h4 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 18px;
 }
 h5 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 16px;
 }
 h6 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
