@@ -180,20 +180,22 @@ h6 {
 	Main
 ******************************************************************/
 .content {
-	max-width: 960px;
-	width: 90%;
+	max-width: 900px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 .content.sidebar {
-	width: 480px;
+	min-width: 480px;
+	width: 50%;
 	float: left;
 	margin-top: 20px;
 	border-right: 1px solid #e7e7e7;
 }
 .sidebar {
-	width: 320px;
+	width: 40%;
 	float: left;
+	margin-top: 20;
 }
 blockquote {
 	font-family: "Open Sans", Verdana, Arial, sans-serif;
