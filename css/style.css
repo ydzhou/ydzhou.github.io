@@ -197,39 +197,6 @@ h6 {
 	float: left;
 	margin-top: 20;
 }
-blockquote {
-	font-family: "Open Sans", Verdana, Arial, sans-serif;
-	font-size: 28px;
-	line-height: 60px;
-	width: 100%;
-	background-color: #f6f6f6;
-	height: 100px;
-	text-align: center;
-	padding-top: 40px;
-	color: #616161;
-	font-weight: 300;
-	font-style: italic;
-}
-blockquote:before {
-	content: '"';
-	font-weight: bold;
-	font-size: 36px;
-}
-blockquote:after {
-	content: '"';
-	font-weight: bold;
-	font-size: 36px;
-}
-div.pagetitle {
-	width: 100%;
-	background-color: #333333;
-	height: 120px;
-}
-div.pagetitle h1 {
-	line-height: 120px;
-	color: #FFF;
-	text-align: center;
-}
 p.main {
 	font-size: 15px;
 	text-align: center;
@@ -385,38 +352,6 @@ ul.mainmenu li.active a {
 	/*color: #FFF;*/
 	color: #333333;
 }
-
-/******************************************************************
-	jCarousel
-******************************************************************/
-.jcarousel-prev, .jcarousel-next {
-	width: 20px;
-	height: 20px;
-	background-image: url(../img/carouselcontrols.png);
-	background-repeat: no-repeat;
-	background-color: #333333;
-	cursor: pointer;
-	position: absolute;
-}
-.jcarousel-prev-disabled, .jcarousel-next-disabled {
-	width: 20px;
-	height: 20px;
-	background-image: url(../img/carouselcontrols.png);
-	background-repeat: no-repeat;
-	background-color: #cfcfcf;
-	cursor: pointer;
-	position: absolute;
-}
-.jcarousel-next, .jcarousel-next-disabled {
-	background-position: -20px 0px;
-	top: -25px;
-	right: 0px;
-}
-.jcarousel-prev, .jcarousel-prev-disabled {
-	top: -25px;
-	right: 22px;
-}
-
 /******************************************************************
 	Footer
 ******************************************************************/
@@ -507,15 +442,15 @@ div.section.block .hover.content {
 div.section.block .hover.content h2 {
 	padding-top: 40px;
 	font-size: 40px;
-	font-weight: 400;
+/*	font-weight: 400;*/
 	color: #FFF;
 }
 div.section.block .hover.content h5 {
-	font-weight: 400;
+/*	font-weight: 400;*/
 	color: #FFF;
 }
 div.section.block .hover.content h6 {
-	font-weight: 400;
+/*	font-weight: 400;*/
 	color: #FFF;
 }
 div.section.full li:last-child  {
@@ -580,69 +515,6 @@ div.person div.info {
 }
 div.person div.image img {
 	position: absolute;
-}
-div.quotehover {
-	cursor: pointer;
-	display: none;
-	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 340px;
-	height: 250px;
-	background-image: url(../img/quotehover.png);
-	background-repeat: no-repeat;
-	background-color: rgba(96, 147, 231, 0.6);
-}
-div.quotehover h5, div.quotehover h6 {
-	color: #FFF;
-	text-align: center;
-	padding: 0px 20px;
-}
-div.quotehover h5 {
-	padding-top: 100px;
-	font-size: 14px;
-}
-div.quotehover h6 {
-	font-size: 10px;
-}
-a.socialicon {
-	background-image: url(../img/socialicons.png);
-	background-repeat: no-repeat;
-	display: block;
-	width: 30px;
-	height: 30px;
-	float: left;
-	margin: 20px 10px 0px 0px;
-}
-a.socialicon.linkedin {
-	background-position: 0px 0px;
-}
-a.socialicon.linkedin:hover {
-	background-position: 0px -30px;
-}
-a.socialicon.facebook {
-	background-position: -30px 0px;
-}
-a.socialicon.facebook:hover {
-	background-position: -30px -30px;
-}
-a.socialicon.twitter {
-	background-position: -60px 0px;
-}
-a.socialicon.twitter:hover {
-	background-position: -60px -30px;
-}
-a.socialicon.pinterest {
-	background-position: -90px 0px;
-}
-a.socialicon.pinterest:hover {
-	background-position: -90px -30px;
-}
-a.socialicon.dribbble {
-	background-position: -120px 0px;
-}
-a.socialicon.dribbble:hover {
-	background-position: -120px -30px;
 }
 /******************************************************************
 	Project
