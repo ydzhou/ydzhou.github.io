@@ -1,146 +1,49 @@
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Howdy | Y.Zhou Homepage</title>
-<!-- Load CSS -->
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<!-- Load Icon Font -->
-<link href="css/webfont.css" rel="stylesheet" type="text/css" />
-<!-- Load jQuery library -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<!-- Load jCarousel js -->
-<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-<!-- Load js -->
-<script type="text/javascript" src="js/custom.js"></script>
-</head>
-<!-- Start Body -->
-<body>
-	<!-- Start Menu -->
-	<div class="menubar" data-scroll="false">
-		<ul class="mainmenu">
-			<li class="active"><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li> 
-			<li><a href="blog">Blog</a></li>
-			<li><a href="http://github.com/ydzhou">Github</a></li>
-		</ul>
-        <a class="logo"></a>
-	</div>
-	<!-- End Menu -->
-	
-	<!-- Start Home -->
-	<a class="scroll" id="home"></a>
-	<div class="home hero">
-		<!-- <div class="overlay"></div> -->
-		<div class="herowrapper">
-			<!-- <h1>Yudi Zhou, a coder loving <b class="rotate color">coding, hacking, gaming</b>.</h1> -->
-			<h1>Yudi Zhou the Coder.</h1>
-		</div>
-	</div>
-	<!-- End Home -->
+---
+layout: default
+---
 
-	<!-- Start Content -->
-	<div class="content">
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="post">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <h1>{{ post.title }}</h1>
 
-		<!-- Start Content -->
-		<div class="content sidebar" id="snippets">
+        <div>
+          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+        </div>
+      </a>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-			<!-- Start Article -->
-			<article class="post">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/gym.png">
-						<div class="posthover"><a class="openpost" href="javascript:void(0);" data-id="1">read more</a></div>
-					</div>
-				</div>
-				<a href="http://gamesyoumiss.herokuapp.com/recom"><h3>A missing game recommender for Steam users</h3></a>
-				<a href="http://gamesyoumiss.herokuapp.com/recom"><h6>TRY IT OUT!</h6></a>
-				<p>A web application is built for recommending games for your Steam account. It provides accurate recommendations based on the games your friends have played the most, while you are most likely interested.</p>
-			</article>
-			<!-- End Article -->
-			
-			<!-- Clear :) -->
-			<div class="clear"></div>
-		</div>
-		<!-- End Content -->
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
 
-		<!-- Start Content -->
-		<div class="content sidebar" id="postsfull">
+  <!-- pagination -->
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
 
-			<!-- Start Article -->
-			<article class="post full" data-id="1">				
-				<div class="hover">	
-					<div class="postimage">
-						<img src="img/gym.png">
-						<div class="posthover"><a class="backtoblog" href="javascript:void(0);" data-id="1">back to projects</a></div>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<h3>A missing game recommender for Steam users</h3>
-				<p> A missing game recommender for Steam users who have suffered a long painful way to find a new and awesome game, in the flood of biased and exaggerated comments and recommendations online. </p>
-				<p> I am a long-term Steam user, who has devoted hundreds of hours to have fun with my friends on various games. However, there is one thing that confuses me the most. Whenever I try to get a new game, I usually ends up buying the one that I immediately lose my interest. Every game looks fantastic, if you only have a grasp on their trailer or reviews done by "Big Website". It is so biased and not trust-worthy. That's why I try to build a simple yet powerful recommender, to at least ease my pain and it works pretty well now.</p>
-				<p>It is built upon Django framework, Postgres database and an information-retrieval recommender. It is deployed on Heroku. For more info, you can check on my github page.</p>
-				<p>
-					Get excited? Try it now: <a href="http://gamesyoumiss.herokuapp.com/recom/">http://gamesyoumiss.herokuapp.com/recom/</a>
-				</p>
-			</article>
-			<!-- End Article -->
-			
-			<!-- Clear :) -->
-			<div class="clear"></div>
-		</div>
-		<!-- End Content -->
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="webjeda">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
 
-		<!-- Start Sidebar -->
-		<div id="sidebar" class="sidebar">
-
-			<div class="person">
-	            <a class="scroll" id="about"></a>
-				<div class="image">
-				</div>
-				<h5>A Little About Me</h5>
-				<p>The love of coding flows through my vein and its power drives me nuts. I hope one day I could master it. I am always get excited with crazy thoughts and inside this tiny machine, I could do everything to apply them into real products.</p>
-				<p>This is the site where I share products and projects that have been worked on in past years. I feel so interested and excited when I get them done, and can't wait to share with you.</p>
-				<p>Among all the coding stuff, I am mostly interested in web back-end development, information retrieval and BigData. If you feel interested or have any question, feel free to shoot me a message.</p>
-
-				<h5>Contact Me</h5>
-				<p>Email: ydotzhou AT gmail DOT com</p>
-			</div>
-			<!-- Clear :) -->
-			<div class="clear"></div>
-		</div>
-		<!-- End Sidebar -->
-
-		<!-- Clear :) -->
-		<div class="clear"></div>
-	</div>
-	<!-- End Content -->
-	
-	<footer class="footer">
-		<h6>© Y.Zhou All rights reserved | Powered by Github 
-        </h6>
-	</footer>
-
-    <!-- Start of StatCounter Code for Default Guide -->
-    <script type="text/javascript">
-    var sc_project=10253845; 
-    var sc_invisible=1; 
-    var sc_security="043bc37d"; 
-    var scJsHost = (("https:" == document.location.protocol) ?
-    "https://secure." : "http://www.");
-    document.write("<sc"+"ript type='text/javascript' src='" +
-    scJsHost+
-    "statcounter.com/counter/counter.js'></"+"script>");
-    </script>
-    <noscript><div class="statcounter"><a title="shopify
-    analytics ecommerce tracking"
-    href="http://statcounter.com/shopify/" target="_blank"><img
-    class="statcounter"
-    src="http://c.statcounter.com/10253845/0/043bc37d/1/"
-    alt="shopify analytics ecommerce
-    tracking"></a></div></noscript>
-    <!-- End of StatCounter Code for Default Guide -->
-
-</body>
-<!-- End Body -->
-</html>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
