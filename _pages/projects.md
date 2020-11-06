@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Me
+title: Projects
 permalink: /projects/
 ---
 
-Software Engineer at Snap. Ex-Amazonian. Ex-Aggies.
+
