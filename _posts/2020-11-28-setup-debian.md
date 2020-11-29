@@ -89,5 +89,5 @@ sudo apt install mesa-vulkan-drivers libglx-mesa0:i386 mesa-vulkan-drivers:i386 
 
 If you run into error `libGL.so.1 is missing`, run this to install legacy driver to pull in this lib,
 ```
-sudo apt install libgl1-nvidia-glx:i386
+sudo apt install libgl1-nvidia-glx:i386 --no-install-recommends
 ```
