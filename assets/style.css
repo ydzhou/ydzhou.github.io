@@ -9,20 +9,24 @@
     list-style-type: none;
 }
 
-.FooterSection {
+#FooterSection {
     margin-top: 50px;
     margin-bottom: 100px;
     background-color: #bababa;
+    border-radius: 20px;
+    width: 64%;
+    margin-left: 18%
 }
 
-.FooterSection ul li a {
+#FooterSection ul li a {
     padding-right: 30px;
     padding-left: 30px;
 }
 
-.FooterSection ul {
-    padding-left: 0px
+#FooterSection ul {
+    padding-left: 0px;
     list-style-type: none;
+    line-height: 1.1;
 }
 
 .link {
@@ -40,4 +44,13 @@ img {
     margin: auto;
     width: 50%;
     max-width: 500px;
+}
+
+h1, h2, h3, h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
+}
+
+p, ol, ul {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
+    line-height: 1.5;
 }
