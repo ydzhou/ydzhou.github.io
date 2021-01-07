@@ -1,0 +1,37 @@
+.BodySection {
+    margin-top: 100px;
+    padding-left: 20%;
+    width: 60%;
+}
+
+.BodySection ul {
+    padding-left: 0px;
+}
+
+.FooterSection {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.FooterSection ul li a {
+    padding-right: 10px;
+    text-align: left;
+}
+
+.FooterSection ul {
+    padding-left: 0px
+}
+
+ul {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    background-color: none;
+}
+
+.link:hover {
+    background-color: gray;
+}
