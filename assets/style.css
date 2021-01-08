@@ -56,7 +56,9 @@ img {
     min-width: 300px;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen 
+    and (max-device-width: 600px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
 
     body {
         font-size: 18px;
