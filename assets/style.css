@@ -68,7 +68,8 @@ img {
 
 @media only screen 
     and (max-device-width: 600px) 
-    and (-webkit-min-device-pixel-ratio: 3) {
+    and (-webkit-min-device-pixel-ratio: 3),
+    (max-width: 600px) {
 
     body {
         font-size: 36px;
@@ -83,15 +84,27 @@ img {
 
     #Nav {
         background-color: #bababa;
-        border-radius: 16px;
+        border-radius: 0px;
         width: 100%;
         margin-left: 0%;
     }
 
     #search-input {
-        border-radius: 5px;
+        border-radius: 15px;
         border-style: hidden;
         font-size: 40px;
     }
+
+    #search {
+        margin-left: 10%;
+        width: 90%;
+    }
+
+    #search-results {
+    }
+
+    #Nav .navbar {
+        display: block;
+    } 
 
 }

@@ -77,7 +77,8 @@ It is super easy to install steam through flatpak.
 First install flatpak via
 ```
 sudo apt install flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists \
+    flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 Optionally you can install flatpak gnome shop plugin,
