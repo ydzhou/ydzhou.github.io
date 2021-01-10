@@ -15,18 +15,28 @@
     background-color: #bababa;
     border-radius: 16px;
     width: 64%;
-    margin-left: 18%;
+    margin-left: 18%;    
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-#Nav ul li a {
-    padding-right: 30px;
-    padding-left: 30px;
+#Nav .navbar {
+    margin-left: 30px;
+} 
+
+#search {
+    float: right;
+    margin-right: 30px;
 }
 
-#Nav ul {
-    padding-left: 0px;
-    list-style-type: none;
-    line-height: 1.1;
+#search-input {
+    border-radius: 5px;
+    border-style: hidden;
+    font-size: 16px;
+}
+
+#search-results {
+    margin-left: 30px;
 }
 
 .link {
@@ -39,13 +49,13 @@
     background-color: gray;
 }
 
-h1, h2, h3, h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
-}
-
-p, ol, ul {
+body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
     line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
 }
 
 img {
@@ -61,7 +71,7 @@ img {
     and (-webkit-min-device-pixel-ratio: 3) {
 
     body {
-        font-size: 18px;
+        font-size: 36px;
     }
 
     .BodySection {
@@ -78,16 +88,10 @@ img {
         margin-left: 0%;
     }
 
-    #Nav ul li a {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    img {
-        display: block;
-        margin: auto;
-        width: 100%;
-        max-width: 500px;
+    #search-input {
+        border-radius: 5px;
+        border-style: hidden;
+        font-size: 40px;
     }
 
 }
