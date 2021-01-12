@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/assets/style.css">
   </head>
   <body>
-    {% include header.html %}
     <div class="body-section">
       <div class="content">
         <h1>{{ page.title }}</h1>
@@ -16,7 +15,9 @@
         {% if page.date %} <p>{{ page.date | date: "%-d %B %Y"}}</p> {% endif %}
         {{ content }}
       </div>
-    {% include footer.html %}
     </div>
+    <button type="button" id="back-button">
+        <a href="/" class="link">Back</a>
+    </button>
   </body>
 </html>
