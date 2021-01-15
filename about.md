@@ -1,10 +1,10 @@
 ---
 layout: post
-title: About Me
+title: About
 ---
 
-I live in a nordic fishing village by the Puget Sound.
+I live in a nordic fishing village by Puget Sound.
 
-I love coding random things and enjoy the moments where my works bring joys to others.
+I love coding random things.
 
 I am capturing beautiful Pacific Northwestern scenes [here](https://500px.com/p/yudizhou)
