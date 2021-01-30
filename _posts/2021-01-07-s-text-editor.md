@@ -1,6 +1,6 @@
 ---
 layout: default
-title: STE, a Simple Text Editor in Golang
+title: 用 Go 写了一个简单的终端文字编辑软件
 ---
 
 I build a simple text editor in the terminal [here](https://github.com/ydzhou/ste).

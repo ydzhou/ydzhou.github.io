@@ -1,9 +1,9 @@
 ---
 layout: default
-title: A Guide to Install Debian 10 for My Gaming Machine
+title: 在我的游戏 PC 上安装 Debian 10
 ---
 
-## Machine Specification
+## 配置
 
 * CPU: Intel 10th-gen i5
 * Graphic Card: MSI Nvidia RTX 2070 Duke
@@ -12,81 +12,70 @@ title: A Guide to Install Debian 10 for My Gaming Machine
 * Hard Drive: Samsung 1TB SSD
 * Power Supply: Corsair 600W Plat SFX PSU
 
-## FAQ
+## 常见问题
+### 第一次装机无法启动进入图形界面
 
-### Cannot boot up into Graphical Desktop Environment After Installation
-
-Debian has poor support for modern graphic cards due to its outdated driver collection. It is most likely that you cannot boot into graphical desktop environment (e.g. gnome). When you first boot up the system, press `e` in the Grub page and append this to the line starting with `linux`,
+Debian 安装盘里自带的驱动都非常老旧，这使得一般较新的显卡，都没法在第一次安装完时运作。我们需要自行更新显卡驱动。在 grub 画面按 `e`，然后把下面这句加在以 `linux` 开头的那行,
 
 ```
 systemd.unit=multi-user.target
 ```
+按 ctrl+x 继续启动并以命令行界面登陆。这里你可能需要先获得 sudo 权限来运行下面命令，添加 non-free repo。
 
-Press ctrl+x to continue the boot-up into command line session. To be noticed, you may need to add your user into sudo group first.
-
-Run following commands to add non-free repo
 ```
 sudo apt edit-resources
 ```
 
-Append this in the repo config file
+将一下写进配置文件每行末尾，
 ```
 non-free
 ```
 
-The run this to update APT repo and install Nvidia card driver
+更新 API 源，然后安装 Nvidia 驱动。此外，你也可以通过 backported 来安装更新的驱动，但这不是必须的。
 ```
 sudo apt update
 sudo apt install nvidia-driver
 ```
 
-### User Cannot Use Sudo
-
+### 用户没有 sudo 权限
+```
 Run this to add your `username` into sudo list
 ```
-sudo adduser ${username} sudo
-```
+### TCS Deadline Error
 
-### Getting TCS Deadline Error During First Bootup
-
-Install Intel microcode
 ```
 sudo apt install intel-microcode
 ```
 
-### No Wifi Device with iwlwifi error
+### 找不到 wifi 硬件
 
-Run this,
 ```
 apt install firmware-iwlwifi
 ```
 
-### Change to Other Languages
-
-Run this to add desired locales,
+### 切换系统语言
+先配置想要的语言 locale
 ```
 sudo dpkg-reconfigure locales
 ```
 
-Then select the new locale in Settings/Region and Language, and logout
+再去 Settings/Region and Language 里选择这个语言并且重新登陆。
 
-### Install Steam
+### 安装 Steam
 
-It is super easy to install steam through flatpak.
-
-First install flatpak via
+Debian 有自己的 repo 安装 Steam，但是配置繁琐且存在 bug（libsol丢失），而且版本也偏老旧。这里我们选择通过 Flatpak 来安装 Steam。先安装 Flatpak，
 ```
 sudo apt install flatpak
 flatpak remote-add --if-not-exists \
     flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-Optionally you can install flatpak gnome shop plugin,
+然后安装 Gnome 插件，之后你就可以在商店找到 Steam 安装选项。此外，你也可以通过命令行安装。
 ```
 sudo apt install gnome-software-plugin-flatpak
 ```
 
-### Install Chinese input method
+### 安装中文输入法
 
 ```
 sudo apt install ibus ibus-rime ibus-libpinyin

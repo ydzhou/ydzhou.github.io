@@ -1,10 +1,14 @@
 ---
 layout: default
-title: About
+title: 关于我自己
 ---
 
-I live in a nordic fishing village by Puget Sound.
+感谢你的来访
 
-I love coding random things.
+我生活在一个临近普吉湾，有着诺曼风情（对，就是维京文化）的北美小镇。
 
-I am capturing beautiful Pacific Northwestern scenes [here](https://500px.com/p/yudizhou)
+我喜欢编写一些有趣的东西。
+
+我日常是一名不年轻，也还未够资深的后端程序员。工作是避免用户瞪着手机怒喊到，我的 Snap 怎么发不出去啦。
+
+我正在记录毗邻西太平洋的北美[风光](https://500px.com/p/yudizhou)
