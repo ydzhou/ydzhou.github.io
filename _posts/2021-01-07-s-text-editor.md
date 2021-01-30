@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: STE, a Simple Text Editor in Golang
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: A Guide to Install Debian 10 for My Gaming Machine
 ---
 
