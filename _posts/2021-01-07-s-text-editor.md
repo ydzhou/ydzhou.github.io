@@ -7,15 +7,15 @@ I build a simple text editor in the terminal [here](https://github.com/ydzhou/st
 
 ## Overview
 
-Similar to MVC pattern, a text editor has three independent module:
+Similar to MVC pattern, a text editor has three independent modules:
 
-1. controller: to handle customer keyboard input and dispatch to further processing.
+1. controller: to handle customer keyboard input and dispatch for further processing.
 2. model: to store what customer is working on and process necessary business logic.
 3. view: to render user interface of the editor
 
 ![Overview]({{ site.baseurl }}/assets/ste0.svg)
 
-You can think of the editor is in a infinite loop. First we clear the screen and render the viewable text document content in `stdout`. The content view is decided by both the postition of the cursor and size of the terminal screen. Then we listen on the key input at `stdin` and modify the text document or execute corresponding commands.
+You can think of the editor is in an infinite loop. First we clear the screen and render the viewable text document content in `stdout`. The content view is decided by the position of the cursor and the size of the terminal screen. Then we listen on the key input at `stdin` in order to modify the text document or execute corresponding commands.
 
 ```
 for {
@@ -28,7 +28,7 @@ for {
 
 ## How to Handle Key Input
 
-We listen to `Stdin` by one rune. For regular key, it takes only one rune and will be captured and sent to processing. However, for special key, the escape key, it can take multiple runes. The good thing is that, those escape key starts with rune of value 27. Therefore if we listen to a rune of value 27, we need to continue trying to read through the rest of `Stdin`. For example, if a customer pressed arrow up key, it will send three runes. We need to read them all and decide which arrow this keypress is by looking at the 3rd rune. 65 is the arrow up. Once we figure out which key a customer has pressed, we can continue either putting regular keys into the document or executing special actions such as move cursors around or quitting the editor.
+We listen to `Stdin` rune by rune. Regular keys take one rune, thus a single input will be sent to processing once captured. Special keys, also called the escape keys, take multiple runes. Escape keys always start with rune of value 27. Therefore if we listen to a rune of value 27, we will continue reading the following runes in `Stdin`. For example, if an arrow up key is pressed, it will send three runes altogether. We need to read them all. The third rune of value 65 will give its meaning. Once we figure out which key a customer has pressed, we can continue either putting regular keys into the document or executing special actions such as move cursors around or quitting the editor.
 
 ```
 if r == 27 {
@@ -74,11 +74,11 @@ func (b *Buffer) Insert(x, y int, data []rune) {
 
 ## How to Store and Modify Document
 
-We need some ways to store the text that are currently being processed. Giving strong computation power of modern machine, I use a single "big" string to store the text. I am going through how each actions will modify this string to process text.
+We need some ways to store the text that is currently being processed. Given the strong computation power of modern machine, I use a single "big" string to store the text. I am going through how each actions will modify this string to process text.
 
 ### Insert a word
 
-If a customer type a word at current cursor, this word will be inserted in the cursor position. This can be done by inserting the word into the string. Since cursor position is in 2 demision, we need to convert it into the corresponding index of our string as below:
+If a customer type a word at current cursor, this word will be inserted in the cursor position. This can be done by inserting the word into the string. Since cursor position is in 2 dimension, we need to convert it into the corresponding index of our string as below:
 
 ```
 func (b *Buffer) getIdx(x, y int) int {
@@ -108,7 +108,7 @@ Inserting a new line is similar to insert a regular word by putting `\n` in the 
 
 ### Insert a tab
 
-Tab is quite troublesome since it is hard to determine its position just based on cursor. One way is to convert tab as spaces and store them in the buffer, yet it can break some file if it requires tab to execute, such as Fortran or Assemble. The other way is to store tab as `\t` and then restraint cursor to never moved in-between spaces that belong to a single tab.
+Tab is quite tricky since it is hard to determine its position just based on cursor. One way is to convert tab to spaces and store them in the buffer, yet it can break some file if it requires tab to execute, such as Fortran or Assemble. Another way is to store tab as `\t` and then forbid cursor from moving in-between those spaces.
 
 ### Delete a word
 
@@ -149,4 +149,5 @@ Then we can use `offsetX` to get `viewX` number of lines to display and for each
 
 1. Go has native support to process UTF8 by using runes
 2. Terminal control in Go need to be tailored for each operating system. For example, control flag to access term of OSX (freebsd) and Linux is different.
-4. Converting 2D postition in view and 1D index in text object can cause a lot of effort.
+4. Converting 2D position in view and 1D index in text object can be tedious.
+
