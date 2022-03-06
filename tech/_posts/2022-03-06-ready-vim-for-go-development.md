@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ready Vim for Go Development
+title: Ready Vim for Go development
 ---
 
 ## Language Server Protocol (gopls)
