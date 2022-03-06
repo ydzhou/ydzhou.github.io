@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 在我的游戏 PC 上安装 Debian 10
+title: Set Debian 10 up for gaming
 ---
 
-## 配置
+## PC Spec
 
 * CPU: Intel 10th-gen i5
 * Graphic Card: MSI Nvidia RTX 2070 Duke
@@ -12,7 +12,7 @@ title: 在我的游戏 PC 上安装 Debian 10
 * Hard Drive: Samsung 1TB SSD
 * Power Supply: Corsair 600W Plat SFX PSU
 
-## 常见问题
+## FAQ
 ### 第一次装机无法启动进入图形界面
 
 Debian 安装盘里自带的驱动都非常老旧，这使得一般较新的显卡，都没法在第一次安装完时运作。我们需要自行更新显卡驱动。在 grub 画面按 `e`，然后把下面这句加在以 `linux` 开头的那行,

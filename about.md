@@ -1,14 +1,12 @@
 ---
 layout: default
-title: 关于我自己
+title: About Me 
 ---
 
-感谢你的来访
+Welcome!
 
-我生活在一个临近普吉湾，有着诺曼风情（对，就是维京文化）的北美小镇。
+I live in a nordic town by the Pudget Sound.
 
-我喜欢编写一些有趣的东西。
+I love coding and building interesting things.
 
-我日常是一名不年轻，也还未够资深的后端程序员。工作是避免用户瞪着手机怒喊到，我的 Snap 怎么发不出去啦。
-
-我正在记录毗邻西太平洋的北美[风光](https://500px.com/p/ydotzhou)
+I am capturing spectacular views of the [Pacific Northwest](https://500px.com/p/ydotzhou)
