@@ -1,1 +1,0 @@
-casual/_posts/2022-03-12-nope-neovim.md
