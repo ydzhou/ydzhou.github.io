@@ -5,7 +5,7 @@ title: 极简主义的 Vim 软件开发配置
 
 首先我个人不赞同使用 SpaceVim 这类预先配置好的 IDE，因为我认为 Vim 最好的定位还是一个轻量级文本编辑器。本篇文章以极简主义为中心，提供了配置 Vim 的思路
 
-<img src="{{ site.baseurl }}/assets/vim-dev0.png" width="500">
+![vim-setup-for-go]({{ site.baseurl }}/assets/vim-dev0.png)
 
 ## 文件的浏览
 
