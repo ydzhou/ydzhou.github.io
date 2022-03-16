@@ -1,16 +1,14 @@
 ---
 layout: default
-title: 关于我
+title: Keep Coding, Have Fun
 ---
 
-欢迎来到我的小站！
+Welcome to my personal site!
 
-我住在普吉湾畔一个有着诺曼风情的小镇。这里和我的故乡相似，依山傍水，四季绵雨。
+I am living in a small nordic town by the Pudget Sound.
 
-我会时不时在小站分享一些自己业余时间制作的有趣的东西。
+I've been coding since I was a boy and my passion never fades. My first programming language is LOGO. To today, I still remember myself got confused every time when trying to figure out where this little turtle would land.
 
-我第一次接触编程，是 LOGO 语言。我还记得当时经常被那只小乌龟绕得焦头烂额。
+I work as a backend Software Engineer in a small chat company. I am currently building exciting things related to Cloud Infrastructure. Previously I worked in Amazon.
 
-日常生活中我是一名后端程序员（backend software engineer），主要工作是保证用户不要为了发不出去 Snap 而烦恼。我现在参与的项目方向是混合云的计算架构（multi-cloud computing infrastructure）。
-
-闲暇的时候我也会拍摄下[太平洋西北海岸的风光](https://500px.com/p/ydotzhou)
+In my casual time, I capture some of the most beautiful scenes of [Pacific Northernwest](https://500px.com/p/ydotzhou)

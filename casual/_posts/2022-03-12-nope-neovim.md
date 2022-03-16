@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Nope, Neovim
+title: 我为什么不使用 Neovim
 ---
 
-我认为 Neovim 是一个多余的产品，或者说，是一个不懂 Unix 哲学的产品，那就是
+我认为 Neovim 是一个多余的产品，或者说，是一个不懂 Unix 哲学的产品
 
 > Keep it simple，stupid
 
@@ -11,7 +11,7 @@ title: Nope, Neovim
 
 > If it works, it works
 
-那么 Vim 有什么不足，需要一个 Neo（新）vim 来完善呢？
+Vim 大多数时候是 work 的，那么 Neovim 的创新有价值吗？
 
 ## 功能越多，越好吗？
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 极简主义的 Vim 软件开发配置
+title: 极简的 Vim 软件开发配置
 ---
 
 首先我个人不赞同使用 SpaceVim 这类预先配置好的 IDE，因为我认为 Vim 最好的定位还是一个轻量级文本编辑器。本篇文章以极简主义为中心，提供了配置 Vim 的思路
@@ -31,13 +31,13 @@ title: 极简主义的 Vim 软件开发配置
 
 这类插件提供了类似 Project Drawer，使你可以通过根目录，一层层地浏览项目文件。
 
-#### Fern (not recommended)
+#### Fern (recommended)
 
 [Fern](https://github.com/lambdalisue/fern.vim) 是一个类似 Nerdtree 的树状浏览，但是它的性能优于 Nerdtree，并且是异步插件。
 
 #### Dirvish
 
-[Dirvish](https://github.com/justinmk/vim-dirvish) 更偏向于 netrw。它的性能是最强的。
+[Dirvish](https://github.com/justinmk/vim-dirvish) 更偏向于 netrw。它的性能是最强的。但是 Dirvish 并没有树状浏览。
 
 ## 自动补全以及语言服务协议 LSP
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Debian 10 for PC gaming
+title: 在 Debian 10 上玩游戏
 ---
 
 ## PC Spec
