@@ -15,26 +15,35 @@
   </head>
   <body>
     <div class="body-section">
-      <img src="assets/avatar.png">        
-      <div class="content">
-        <div id="homepage-content">
+      <div id="homepage-avatar">  
+        <img src="assets/avatar.png">        
+      </div>
+      <div id="homepage-content">
+          <ul>
+            <li>Software Engineer @ &#128123, ex-Amazon</li>
+            <li>Messing up random Cloud Infra stuff</li>
+            <li>Seasoned plumber keep traffic flow</li>
+            <li>Powered by #Go #Java #Typescript #Python</li>
+          </ul>
+      </div>
+      <div id="homepage-link">
             <ul>
-              <li>Software Engineer @ &#128123, ex-Amazon</li>
-              <li>Messing up random Cloud Infra stuff</li>
-              <li>Seasoned plumber keep traffic flow</li>
-              <li>Powered by #Go #Java #Typescript #Python</li>
+              <li><a href="/posts.html" class="link">Blog</a></li>
+              <li><a href="/about.html" class="link">About</a></li>
+              <li><a href="https://github.com/ydzhou" class="link">Github</a></li>
+              <li><a href="mailto:{{ site.email }}" class="link">Contact</a></li>
             </ul>
-          </div>
-          <div id="homepage-link">
-              <ul>
-                <li><a href="/posts.html" class="link">Blog</a></li>
-                <li><a href="/about.html" class="link">About</a></li>
-                <li><a href="https://github.com/ydzhou" class="link">Github</a></li>
-                <li><a href="mailto:{{ site.email }}" class="link">Contact</a></li>
-              </ul>
-          </div>
       </div>
     </div>
   </body>
 </html>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FXJCRT8WG4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FXJCRT8WG4');
+</script>
