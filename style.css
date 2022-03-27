@@ -32,6 +32,10 @@ ul {
     list-style-type: none;
 }
 
+#homepage-link .link {
+    text-decoration: underline;
+}
+
 #homepage-link li {
     float: none;
     margin: 0 30px
@@ -39,11 +43,10 @@ ul {
 
 .content {
     margin-top: 40px;
-    text-align: center;
 }
 
 .link {
-    text-decoration: overline;
+    text-decoration: none;
     color: black;
     background-color: none;
 }
