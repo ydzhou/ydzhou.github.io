@@ -15,21 +15,19 @@
 }
 
 ul {
-    padding-left: 0px;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 #homepage-content {
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 50px;
     text-align: center;
 }
 
 #homepage-content ul {
-    list-style: square;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 0;
     display: inline-block;
     text-align: left;
 }
@@ -115,4 +113,25 @@ img {
 
 #nav-section .link {
     color: #e0e0e0
+}
+
+@media screen
+    and (max-device-width: 1000px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    #homepage-section {
+        padding-top: 150px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        font-size: 30pt;
+    }
+    #homepage-avatar img {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    #homepage-content {
+        padding-top: 160px;
+    }
 }
