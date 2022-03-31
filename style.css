@@ -1,15 +1,13 @@
 .body-section {
     margin-top: 50px;
-    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     width: 50%;
-    min-width: 600px;
 }
 
 #homepage-section {
     padding-top: 60px;
-    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -103,35 +101,71 @@ img {
 }
 
 #nav-section {
-    background-color: black;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    position: fixed;
-    bottom: 0;
 }
 
 #nav-section .link {
-    color: #e0e0e0
+    color: #808080
 }
 
-@media screen
-    and (max-device-width: 1000px)
-    and (-webkit-min-device-pixel-ratio: 2) {
+#footer-section {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.back-button {
+    background-color: #EBEBEB;
+    border-radius: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: black 
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
     #homepage-section {
-        padding-top: 150px;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
     }
+    {
+    .body-section {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
     body {
-        font-size: 30pt;
+        font-size: 36pt;
     }
     #homepage-avatar img {
         min-width: 300px;
         max-width: 300px;
     }
     #homepage-content {
-        padding-top: 160px;
+        padding-top: 120px;
+    }
+    #homepage-link .nav-link ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+    #homepage-link .nav-link li {
+        background-color: white;
+        margin-top: 40px;
+        border-radius: 5%;
+        box-shadow: 5px 5px #888888;
+        padding: 16px 16px;
+        cursor: pointer;
+    }
+    #homepage-link {
+        text-align: center
     }
 }
