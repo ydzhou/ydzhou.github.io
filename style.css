@@ -118,8 +118,9 @@ img {
 }
 
 .back-button {
-    background-color: #EBEBEB;
-    border-radius: 20%;
+    background-color: white;
+    box-shadow: 5px 5px #888888;
+    border-radius: 5%;
     text-decoration: none;
     text-align: center;
     color: black 
@@ -133,10 +134,14 @@ img {
         width: 100%;
         margin: 0;
     }
-    {
     .body-section {
+        width: 90%;
+    }
+    #footer-section {
+        width: 90%;
+    }
+    .back-button {
         width: 100%;
-        margin: 0;
     }
 }
 
@@ -169,3 +174,4 @@ img {
         text-align: center
     }
 }
+

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-list
 ---
 <ul class="post-listing">
   {% for post in site.posts %}
