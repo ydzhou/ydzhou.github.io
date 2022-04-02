@@ -74,6 +74,12 @@ ul {
     outline: 0;
 }
 
+a.full-button {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif;
     font-size: 12pt;
@@ -100,13 +106,19 @@ img {
     max-width: 120px;
 }
 
-#nav-section {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+.nav {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #808080;
+    border-radius: 10px;
 }
 
-#nav-section .link {
+.nav .link {
     color: #808080
 }
 
@@ -114,13 +126,13 @@ img {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
+    padding-bottom: 50px;    
 }
 
 .back-button {
     background-color: white;
-    box-shadow: 5px 5px #888888;
-    border-radius: 5%;
+    box-shadow: 0px 0px 10px #808080;
+    border-radius: 10px;
     text-decoration: none;
     text-align: center;
     color: black 
@@ -140,8 +152,8 @@ img {
     #footer-section {
         width: 90%;
     }
-    .back-button {
-        width: 100%;
+    .nav {
+        width: 90%;
     }
 }
 
@@ -162,11 +174,11 @@ img {
         padding: 0;
         display: inline-block;
     }
-    #homepage-link .nav-link li {
+    #homepage-link .nav-link .nav-button {
         background-color: white;
         margin-top: 40px;
-        border-radius: 5%;
-        box-shadow: 5px 5px #888888;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #808080;
         padding: 16px 16px;
         cursor: pointer;
     }
@@ -174,4 +186,3 @@ img {
         text-align: center
     }
 }
-
