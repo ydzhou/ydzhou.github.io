@@ -50,8 +50,9 @@ ul {
 
 .nav-link li {
     float: none;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16pt;
 }
 
 .content {
@@ -101,11 +102,6 @@ img {
     max-width: 1000px;
     min-width: 300px;
     align: center;
-}
-
-.nav-icon {
-    max-width: 30px;
-    min-width: 30px;
 }
 
 #homepage-avatar img {
@@ -165,15 +161,12 @@ img {
         padding-top: 220px;
         font-size: 42pt;
     }
-    .nav-icon {
-        min-width: 100px;
-        max-width: 100px;
-    }
     .nav-link li {
         float: none;
         margin-top: 100px;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 48pt;
     }
 }
 
