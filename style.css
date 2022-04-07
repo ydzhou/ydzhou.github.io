@@ -7,7 +7,7 @@
 }
 
 #homepage-section {
-    padding-top: 150px;
+    padding-top: 15%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,12 +20,10 @@ ul {
 
 #homepage-content {
     font-size: 16pt;
-    padding-top: 100px;
     text-align: center;
 }
 
 #homepage-content ul {
-    margin-top: 40px;
     margin-left: 0;
     display: inline-block;
     text-align: left;
@@ -35,8 +33,28 @@ ul {
     margin: 0 0 5px 0 ;
 }
 
-#homepage-link {
-    padding-top: 50px;
+.homepage-content-card {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 .nav-link ul {
@@ -145,7 +163,7 @@ img {
     }
 }
 
-@media screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
+@media screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     body {
         font-size: 36pt;
     }
@@ -153,12 +171,15 @@ img {
         display: none;
     }
     #homepage-avatar img {
-        padding-top: 200px;
         min-width: 300px;
         max-width: 300px;
     }
+    .homepage-content-card {
+        background-color: #f5f5f5;
+        box-shadow: 0 0 0;
+        width: 720px;
+    }
     #homepage-content {
-        padding-top: 220px;
         font-size: 42pt;
     }
     .nav-link li {
@@ -166,7 +187,7 @@ img {
         margin-top: 100px;
         margin-left: 80px;
         margin-right: 80px;
-        font-size: 48pt;
+        font-size: 60pt;
     }
 }
 
