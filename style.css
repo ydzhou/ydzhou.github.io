@@ -7,7 +7,7 @@
 }
 
 #homepage-section {
-    padding-top: 15%;
+    padding-top: 150px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -30,7 +30,7 @@ ul {
 }
 
 #homepage-content li {
-    margin: 0 0 5px 0 ;
+    margin: 0 0 0 0 ;
 }
 
 .homepage-content-card {
@@ -68,8 +68,8 @@ ul {
 
 .nav-link li {
     float: none;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 16pt;
 }
 
