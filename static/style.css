@@ -43,36 +43,6 @@ ul {
     padding: 20px 20px 20px 20px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
-
-.nav-link ul {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link li {
-    float: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 16pt;
-}
-
 .content {
     margin-top: 40px;
 }
@@ -128,23 +98,22 @@ img {
 }
 
 .nav {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 20px;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
 }
 
 #footer-section {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     padding-bottom: 100px;    
-}
-
-.back-button {
-    text-align: center;
 }
 
 @media screen and (max-width: 700px), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
@@ -158,17 +127,11 @@ img {
     #footer-section {
         width: 90%;
     }
-    .nav {
-        width: 90%;
-    }
 }
 
 @media screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     body {
         font-size: 36pt;
-    }
-    #nav-section {
-        display: none;
     }
     #homepage-avatar img {
         min-width: 300px;
@@ -181,13 +144,6 @@ img {
     }
     #homepage-content {
         font-size: 42pt;
-    }
-    .nav-link li {
-        float: none;
-        margin-top: 100px;
-        margin-left: 80px;
-        margin-right: 80px;
-        font-size: 60pt;
     }
 }
 
