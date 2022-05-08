@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Keep Coding, Have Fun
+title: "Keep Coding, Have Fun"
 ---
 
 I am living in a small nordic town by the Pudget Sound.
@@ -10,4 +9,3 @@ I've been coding since I was a boy and my passion never fades. My first programm
 I am a backend Software Engineer. I am currently messing up some Cloud Infrastructure stuff. Previously I worked in Amazon.
 
 In my casual time, I capture some of the most beautiful scenes of [Pacific Northernwest](https://500px.com/p/ydotzhou)
-

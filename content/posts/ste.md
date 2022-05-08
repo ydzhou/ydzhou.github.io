@@ -1,6 +1,8 @@
 ---
-layout: default
 title: A simple terminal text editor written in Go
+date: 2021-01-07
+publishdate: 2021-01-07
+draft: false
 ---
 
 I build a simple text editor in the terminal [here](https://github.com/ydzhou/ste).
@@ -13,7 +15,7 @@ Similar to MVC pattern, a text editor has three independent modules:
 2. model: to store what customer is working on and process necessary business logic.
 3. view: to render user interface of the editor
 
-![Overview]({{ site.baseurl }}/assets/ste0.svg)
+![Overview](/ste0.svg)
 
 You can think of the editor is in an infinite loop. First we clear the screen and render the viewable text document content in `stdout`. The content view is decided by the position of the cursor and the size of the terminal screen. Then we listen on the key input at `stdin` in order to modify the text document or execute corresponding commands.
 

@@ -1,6 +1,6 @@
 ---
-layout: default
-title: My favorite Linux distro, Debian 11
+title: Debian, always rocking
+date: 2022-04-23
 ---
 
 ## Why Debian？

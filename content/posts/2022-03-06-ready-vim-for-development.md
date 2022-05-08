@@ -1,11 +1,11 @@
 ---
-layout: default
-title: Vim Plugin 推荐
+title: Vim Plugins
+date: 2022-03-06
 ---
 
 本文着重推荐多款优秀的适用于 Vim 软件开发的 Plugin。本文没有考虑仅兼容 neovim 的 Plugin。下面的截图展示了由 nnn.vim，vim-lsp，asyncomplete.vim 等 Plugin 组成的 Go 开发环境。
 
-![vim-setup-for-go]({{ site.baseurl }}/assets/vim-dev0.png)
+![vim-setup-for-go](/vim-dev0.png)
 
 ## 文件浏览
 
