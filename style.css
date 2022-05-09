@@ -27,6 +27,7 @@ ul {
 
 a {
     color: black;
+    text-decoration: #d70a53 underline
 }
 
 a:hover {
