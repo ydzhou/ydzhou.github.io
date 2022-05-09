@@ -6,41 +6,10 @@
     width: 50%;
 }
 
-#homepage-section {
-    padding-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
-}
-
-#homepage-content {
-    font-size: 16pt;
-    text-align: center;
-}
-
-#homepage-content ul {
-    margin-left: 0;
-    display: inline-block;
-    text-align: left;
-}
-
-#homepage-content li {
-    margin: 0 0 0 0 ;
-}
-
-.homepage-content-card {
-    width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    box-shadow: 0 0 20px;
-    border-radius: 10px;
-    padding: 20px 20px 20px 20px;
 }
 
 .content {
@@ -51,24 +20,26 @@ ul {
     font-weight: normal;
 }
 
-.link:hover {
-    color: gray;
-}
-
 .link {
     text-decoration: none;
-    color: black;
     background-color: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: #1793d1;
+    color: white;
 }
 
 .link:focus {
     outline: 0;
 }
 
-a.full-button {
-    display: block;
-    height: 100%;
-    width: 100%;
+.pagination {
+    margin-top: 20px;
 }
 
 body {
@@ -92,13 +63,18 @@ img {
     align: center;
 }
 
-#homepage-avatar img {
-    min-width: 120px;
-    max-width: 120px;
+.go-back {
+    margin-top: 20px;
 }
 
 .nav {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: #1793d1;
+    color: white;
+}
+
+.nav a {
+    color: white;
 }
 
 .nav-left {
@@ -117,10 +93,6 @@ img {
 }
 
 @media screen and (max-width: 700px), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 3) {
-    #homepage-section {
-        width: 100%;
-        margin: 0;
-    }
     .body-section {
         width: 90%;
     }
@@ -132,18 +104,6 @@ img {
 @media screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     body {
         font-size: 36pt;
-    }
-    #homepage-avatar img {
-        min-width: 300px;
-        max-width: 300px;
-    }
-    .homepage-content-card {
-        background-color: #f5f5f5;
-        box-shadow: 0 0 0;
-        width: 720px;
-    }
-    #homepage-content {
-        font-size: 42pt;
     }
 }
 

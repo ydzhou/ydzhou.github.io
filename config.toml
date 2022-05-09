@@ -1,24 +1,29 @@
 baseURL = 'https://ydzhou.github.io'
 languageCode = 'en-us'
 title = '海边的艾尔维斯'
-sectionPagesMenu = "main"
 hasCJKLanguage = true
 googleAnalytics = 'G-NGR0WHS7KP'
 
 [params]
-    mainSections = ['posts']
+mainSections = ['tech', 'random']
+paginationSize = 5
 
 [[menu.main]]
-name = "Home"
+name = "主页"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "About"
-url = "/about"
+name = "技术"
+url = "/tech"
 weight = 2
 
 [[menu.main]]
-name = "Github"
-url = "https://github.com/ydzhou"
+name = "闲扯"
+url = "/random"
 weight = 3
+
+[[menu.main]]
+name = "关于"
+url = "/about"
+weight = 4

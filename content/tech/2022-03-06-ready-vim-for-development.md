@@ -1,5 +1,6 @@
 ---
 title: Vim Plugins
+tags: ['vim', 'coding']
 date: 2022-03-06
 ---
 

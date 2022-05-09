@@ -1,13 +1,16 @@
 <header>
+    <div id="header-section">
     <div class="nav">
 	<div class="nav-left">
 		<a class="link" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     </div>
+    <nav>
 	<div class="nav-right">
 		{{ range .Site.Menus.main }}
 		<a class="link" href="{{ .URL }}">{{ .Name }}</a> |
 		{{ end }}
     </div>
+    </nav>
     </div>
-    <hr>
+    </div>
 </header>

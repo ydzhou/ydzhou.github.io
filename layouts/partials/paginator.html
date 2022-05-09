@@ -2,6 +2,7 @@
 {{ if gt $pag.TotalPages 1 }}
 <ul class="pagination">
 	<span class="page-item page-prev">
+	更多文章：
 	{{ if $pag.HasPrev }}
     <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }} class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>
 	{{ end }}
