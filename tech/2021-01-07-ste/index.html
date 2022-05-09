@@ -59,4 +59,4 @@
         d.offsetY = cursorY
     }
 }
-</code></pre><p>然后我们可以用 <code>offsetX</code> 来算出 <code>viewX</code> 数量的行去渲染。每一行, 我们只渲染 index 在 <code>offsetY</code> 之后的字符。</p><h2 id=感悟和所学>感悟和所学</h2><ol><li>Go 原生通过 rune 支持 UTF8。消除了对于 CJK 字符的处理。</li><li>Go 对于 Terminal 的操作会因为不同操作系统而有区别。如果使用 termbox 这样的第三方库会方便很多。</li><li>把 View 里的 2D 位置转换成 string 文档中的 index 是一个非常繁复的工序。</li></ol><div class=go-back><a href=https://ydzhou.github.io>&lt;&lt;&lt; Go back</a></div></main></div><div id=footer-section>2022 @ Y Zhou | Built with Love | <a href=github.com/ydzhou>Github</a> | Linkedin</div></body></html>
+</code></pre><p>然后我们可以用 <code>offsetX</code> 来算出 <code>viewX</code> 数量的行去渲染。每一行, 我们只渲染 index 在 <code>offsetY</code> 之后的字符。</p><h2 id=感悟和所学>感悟和所学</h2><ol><li>Go 原生通过 rune 支持 UTF8。消除了对于 CJK 字符的处理。</li><li>Go 对于 Terminal 的操作会因为不同操作系统而有区别。如果使用 termbox 这样的第三方库会方便很多。</li><li>把 View 里的 2D 位置转换成 string 文档中的 index 是一个非常繁复的工序。</li></ol><div class=go-back><a href=https://ydzhou.github.io>&lt;&lt;&lt; Go back</a></div></main></div><div id=footer-section>2022 @ Y Zhou | Built with Love | <a href=https://github.com/ydzhou>Github</a> | Linkedin</div></body></html>
