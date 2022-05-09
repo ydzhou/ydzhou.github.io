@@ -27,6 +27,7 @@ ul {
 
 a {
     color: black;
+    text-decoration: #d70a53 underline
 }
 
 a:hover {
@@ -57,10 +58,7 @@ h1, h2, h3, h4 {
 img {
     display: block;
     margin: auto;
-    width: 90%;
-    max-width: 1000px;
-    min-width: 300px;
-    align: center;
+    max-width: 90%;
 }
 
 .go-back {

@@ -2,13 +2,19 @@
     <div id="header-section">
     <div class="nav">
 	<div class="nav-left">
-		<a class="link" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+		<a class="link" href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a>
     </div>
     <nav>
 	<div class="nav-right">
 		{{ range .Site.Menus.main }}
-		<a class="link" href="{{ .URL }}">{{ .Name }}</a> |
+		<a class="link" href="{{ .URL | absLangURL }}">{{ .Name }}</a> |
 		{{ end }}
+        {{ $currLang := .Site.Language.Lang }}
+        {{ range $.Site.Home.AllTranslations }}
+            {{ if ne .Lang $currLang }}
+            <a class="link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+        {{ end }}
     </div>
     </nav>
     </div>

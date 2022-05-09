@@ -5,6 +5,6 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
 <div class="go-back">
-    <a href="{{ .Site.BaseURL }}"><<< Go back</a>
+    <a href="{{ "/" | absLangURL }}"><<< Go back</a>
 </div>
 {{ end }}

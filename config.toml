@@ -3,27 +3,59 @@ languageCode = 'en-us'
 title = '海边的艾尔维斯'
 hasCJKLanguage = true
 googleAnalytics = 'G-NGR0WHS7KP'
+defaultContentLanguage = 'zh'
 
 [params]
 mainSections = ['tech', 'random']
 paginationSize = 5
 
-[[menu.main]]
+[languages]
+[languages.zh]
+languageName = '🇨🇳中文'
+title = '海边的艾尔维斯'
+weight = 1
+
+[languages.en]
+languageName = '🇺🇸English'
+title = 'yzbythesea'
+weight = 2
+
+[[languages.zh.menu.main]]
 name = "主页"
 url = "/"
 weight = 1
 
-[[menu.main]]
+[[languages.zh.menu.main]]
 name = "技术"
 url = "/tech"
 weight = 2
 
-[[menu.main]]
+[[languages.zh.menu.main]]
 name = "闲扯"
 url = "/random"
 weight = 3
 
-[[menu.main]]
+[[languages.zh.menu.main]]
 name = "关于"
+url = "/about"
+weight = 4
+
+[[languages.en.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[languages.en.menu.main]]
+name = "Tech"
+url = "/tech"
+weight = 2
+
+[[languages.en.menu.main]]
+name = "Random"
+url = "/random"
+weight = 3
+
+[[languages.en.menu.main]]
+name = "About"
 url = "/about"
 weight = 4
