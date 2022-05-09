@@ -1,0 +1,62 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><title>海边的艾尔维斯</title><link rel=stylesheet href=https://ydzhou.github.io/style.css></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-NGR0WHS7KP"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-NGR0WHS7KP",{anonymize_ip:!1})}</script><body class=body-section><header><div id=header-section><div class=nav><div class=nav-left><a class=link href=https://ydzhou.github.io>海边的艾尔维斯</a></div><nav><div class=nav-right><a class=link href=/>主页</a> |
+<a class=link href=/tech>技术</a> |
+<a class=link href=/random>闲扯</a> |
+<a class=link href=/about>关于</a> |</div></nav></div></div></header><div class=content><main class=main><h1>用 Go 写一个你自己的 Nano</h1><p>我编写了一个简单的面向 terminal 的<a href=https://github.com/ydzhou/ste>文本编辑器</a>.</p><h2 id=设计>设计</h2><p>和 MVC 设计类似，一个编辑器含有三个独立的模块：</p><ol><li>controller：处理键盘输入</li><li>model：存储文档并运行主要逻辑</li><li>view：渲染编辑器界面和文档</li></ol><p><img src=/ste0.svg alt=Overview></p><p>你可以认为编辑器一直处于无限的循环中。首先我们清空屏幕并把文档内容渲染到 <code>stdout</code>。渲染的内容由你 cursor 的位置和 terminal 大小决定。然后我们一直聆听 <code>stdin</code> 的键盘输入，并以此进行对应操作。</p><pre tabindex=0><code>for {
+    editor.display.DrawScreen(e.buf, e.cursorX, e.cursorY)
+    if editor.process() {
+        break
+    }
+}
+</code></pre><h2 id=如何处理输入>如何处理输入</h2><p>我们监听 <code>stdin</code> 的方式是使用 rune。常规的按键只占用一个 rune。非常规的按键，又被称作 escape key，会占用多个 rune。Escape key 通常以 rune 27 为开头。所以当我们收到的第一个 rune 值为 27 时，我们就继续读取接下来的 rune 来判断这个 escape key。比如，当 arrow up （上方向）键按下的时候，它会发出 3 个 rune。我们需要全部读取这 3 个 rune 才知道这是一个 arrow up 的动作。通过读取第 3 个 rune 的值为 65，我们确定了这个按键。一旦我们了解了用户按下什么键，我们就可以把常规按键放入文档中，或者跟据非常规按键，来执行特殊动作，比如移动 cursor 或者关闭我们的编辑器。</p><pre tabindex=0><code>if r == 27 {
+    if e.reader.Buffered() == 0 {
+		return ESCAPE
+    }
+    for i := 0; i &lt; 3; i++ {
+        r, _, err = e.reader.ReadRune()
+        if err != nil {
+            return UNKNOWN
+        }
+        if i == 1 {
+            switch r {
+            case 65: return ARROW_UP
+            case 66: return ARROW_DOWN
+            case 67: return ARROW_RIGHT
+            case 68: return ARROW_LEFT
+            }
+        }
+    }
+}
+</code></pre><h2 id=如何存储文档>如何存储文档</h2><p>我们需要一些办法来存储文字。有许多成熟的数据结构，比如 ring buffer 或者 line of strings。考虑到现代硬件极强的运算能力，这里我使用了一个简化（粗糙）的方式，一个巨大的 string 来存储文档。接下来我会展开说明如何实现各种对于文档的操作。</p><h3 id=插入一个文字>插入一个文字</h3><p>当用户在当前 cursor 下输入一个文字，这个文字会被插入到现在的位置。因为 cursor 的坐标是 2D，所以我们需要先把它转换为 1D 的 string index，然后就可以直接插入。</p><pre tabindex=0><code>func (b *Buffer) getIdx(x, y int) int {
+    idx := 0
+    for idx, _ = range b.txt {
+        if x == 0 &amp;&amp; y == 0 {
+            break
+        }
+        if x &gt; 0 &amp;&amp; b.txt[idx] == rune(&#39;\n&#39;) {
+            x--
+            continue
+        }
+        if x == 0 {
+            y--
+        }
+        if b.txt[idx] == rune(&#39;\n&#39;) {
+            break
+        }
+    }
+    return idx
+}
+</code></pre><h3 id=插入-newline>插入 Newline</h3><p>和插入文字类似，只是内容变成了 <code>\n</code>。</p><h3 id=插入-tab>插入 Tab</h3><p>Tab 比较难处理因为只基于 cursor 很难决定它的位置。一种办法是把 Tab 转换成空格来存，但这会使得以来 Tab 的文件无法使用，比如 Makefile，Fortran 或者 Assemble。另一种办法是将 Tab 存为 <code>\t</code> 然后禁止 cursor 在 Tab 渲染出来的空格中间移动。</p><h3 id=删除文字>删除文字</h3><p>和插入类似，我们可以直接 shrink 这个 string 来去掉想删除的文字。我们不需要担心 Newline 或者 Tab，因为它们被存成了一个常规的字符。</p><h3 id=移动-cursor>移动 Cursor</h3><p>为了让我们可以插入和删除，Cursor 的位置一直被记录着。值得注意的是，我们需要修复 cursor 的位置如果它移出了编辑器界面的范围。比如用户试图把 cursor 移到一行的最右边，实际上 cursor 会被重置会下一行的最左边。</p><p>另一个需要的注意的事是，当我们删除一行结尾的 line breaker 或者插入 Newline 时，我们需要移动 cusor 到对应的之前行的最右边或者下一行的最左边。</p><p>另外我们需要支持滚动，让 cusor 可以自由的在整个文档里移动，而不受限于 terminal 大小。</p><h2 id=如何渲染文档>如何渲染文档</h2><p>编辑器的内容是由一列 rune 转换渲染出来的。我们把特殊的字符，比如 Tab 和 Newline 变成对应的空格和换行。因为 terminal 大小往往无法显示全部的文档，我们还需要根据 cursor 在文档中的位置，决定哪一部分内容被渲染到界面上。同时当用户把 cursor 移动到未被显示出来的内容时，我们需要重新计算可以被显示的文档部分。</p><h3 id=滚动>滚动</h3><p>我们记录 <code>offsetX</code> 和 <code>offsetY</code> 的位置。那么当前可以被渲染的区域就是，</p><pre tabindex=0><code>Rendering View size = [offsetX, offsetX + viewX, offsetY, offsetY + viewY]
+</code></pre><p><code>viewX</code> 和 <code>viewY</code> 是 terminal 的长宽。如果 cursor 移出了这个区域，我们需要更新 <code>offsetX</code> 和 <code>offsetY</code>。</p><pre tabindex=0><code>func (d *Display) scroll(cursorX int, cursorY int) {
+    if cursorX &gt;= d.offsetX+d.viewX {
+        d.offsetX = cursorX - d.viewX + 1
+    } else if cursorX &lt; d.offsetX {
+        d.offsetX = cursorX
+    }
+    if cursorY &gt;= d.offsetY+d.viewY {
+        d.offsetY = cursorY - d.viewY + 1
+    } else if cursorY &lt; d.offsetY {
+        d.offsetY = cursorY
+    }
+}
+</code></pre><p>然后我们可以用 <code>offsetX</code> 来算出 <code>viewX</code> 数量的行去渲染。每一行, 我们只渲染 index 在 <code>offsetY</code> 之后的字符。</p><h2 id=感悟和所学>感悟和所学</h2><ol><li>Go 原生通过 rune 支持 UTF8。消除了对于 CJK 字符的处理。</li><li>Go 对于 Terminal 的操作会因为不同操作系统而有区别。如果使用 termbox 这样的第三方库会方便很多。</li><li>把 View 里的 2D 位置转换成 string 文档中的 index 是一个非常繁复的工序。</li></ol><div class=go-back><a href=https://ydzhou.github.io>&lt;&lt;&lt; Go back</a></div></main></div><div id=footer-section>2022 @ Y Zhou | Built with Love | <a href=github.com/ydzhou>Github</a> | Linkedin</div></body></html>
