@@ -1,8 +1,9 @@
 <!doctype html><html lang=en-us><head><meta charset=utf-8><title>海边的艾尔维斯</title><link rel=stylesheet href=https://ydzhou.github.io/style.css></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-NGR0WHS7KP"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-NGR0WHS7KP",{anonymize_ip:!1})}</script><body class=body-section><header><div id=header-section><div class=nav><div class=nav-left><a class=link href=https://ydzhou.github.io>海边的艾尔维斯</a></div><nav><div class=nav-right><a class=link href=/>主页</a> |
-<a class=link href=/tech>技术</a> |
-<a class=link href=/random>闲扯</a> |
-<a class=link href=/about>关于</a> |</div></nav></div><hr></div></header><div class=content><main class=main><h1>用 Go 写一个你自己的 Nano</h1><p>我编写了一个简单的面向 terminal 的<a href=https://github.com/ydzhou/ste>文本编辑器</a>.</p><h2 id=设计>设计</h2><p>和 MVC 设计类似，一个编辑器含有三个独立的模块：</p><ol><li>controller：处理键盘输入</li><li>model：存储文档并运行主要逻辑</li><li>view：渲染编辑器界面和文档</li></ol><p><img src=/ste0.svg alt=Overview></p><p>你可以认为编辑器一直处于无限的循环中。首先我们清空屏幕并把文档内容渲染到 <code>stdout</code>。渲染的内容由你 cursor 的位置和 terminal 大小决定。然后我们一直聆听 <code>stdin</code> 的键盘输入，并以此进行对应操作。</p><pre tabindex=0><code>for {
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-NGR0WHS7KP",{anonymize_ip:!1})}</script><body class=body-section><header><div id=header-section><div class=nav><div class=nav-left><a class=link href=https://ydzhou.github.io>海边的艾尔维斯</a></div><nav><div class=nav-right><a class=link href=https://ydzhou.github.io/>主页</a> |
+<a class=link href=https://ydzhou.github.io/tech>技术</a> |
+<a class=link href=https://ydzhou.github.io/random>闲扯</a> |
+<a class=link href=https://ydzhou.github.io/about>关于</a> |
+<a class=link href=https://ydzhou.github.io/en/>🇺🇸English</a></div></nav></div><hr></div></header><div class=content><main class=main><h1>用 Go 写一个你自己的 Nano</h1><p>我编写了一个简单的面向 terminal 的<a href=https://github.com/ydzhou/ste>文本编辑器</a>.</p><h2 id=设计>设计</h2><p>和 MVC 设计类似，一个编辑器含有三个独立的模块：</p><ol><li>controller：处理键盘输入</li><li>model：存储文档并运行主要逻辑</li><li>view：渲染编辑器界面和文档</li></ol><p><img src=/ste0.svg alt=Overview></p><p>你可以认为编辑器一直处于无限的循环中。首先我们清空屏幕并把文档内容渲染到 <code>stdout</code>。渲染的内容由你 cursor 的位置和 terminal 大小决定。然后我们一直聆听 <code>stdin</code> 的键盘输入，并以此进行对应操作。</p><pre tabindex=0><code>for {
     editor.display.DrawScreen(e.buf, e.cursorX, e.cursorY)
     if editor.process() {
         break
@@ -59,4 +60,4 @@
         d.offsetY = cursorY
     }
 }
-</code></pre><p>然后我们可以用 <code>offsetX</code> 来算出 <code>viewX</code> 数量的行去渲染。每一行, 我们只渲染 index 在 <code>offsetY</code> 之后的字符。</p><h2 id=感悟和所学>感悟和所学</h2><ol><li>Go 原生通过 rune 支持 UTF8。消除了对于 CJK 字符的处理。</li><li>Go 对于 Terminal 的操作会因为不同操作系统而有区别。如果使用 termbox 这样的第三方库会方便很多。</li><li>把 View 里的 2D 位置转换成 string 文档中的 index 是一个非常繁复的工序。</li></ol><div class=go-back><a href=https://ydzhou.github.io>&lt;&lt;&lt; Go back</a></div></main></div><div id=footer-section>2022 @ Y Zhou | Built with Love | <a href=https://github.com/ydzhou>Github</a> | Linkedin</div></body></html>
+</code></pre><p>然后我们可以用 <code>offsetX</code> 来算出 <code>viewX</code> 数量的行去渲染。每一行, 我们只渲染 index 在 <code>offsetY</code> 之后的字符。</p><h2 id=感悟和所学>感悟和所学</h2><ol><li>Go 原生通过 rune 支持 UTF8。消除了对于 CJK 字符的处理。</li><li>Go 对于 Terminal 的操作会因为不同操作系统而有区别。如果使用 termbox 这样的第三方库会方便很多。</li><li>把 View 里的 2D 位置转换成 string 文档中的 index 是一个非常繁复的工序。</li></ol><div class=go-back><a href=/>&lt;&lt;&lt; Go back</a></div></main></div><div id=footer-section>2022 @ Y Zhou | 用心呵护 | <a href=https://github.com/ydzhou>Github</a> | Linkedin</div></body></html>
