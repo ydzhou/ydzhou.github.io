@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
     <title>{{ site.Title }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/style.css">
+    <link rel="stylesheet" href="{{ relURL "style.css" }}">
 </head>
 {{ template "_internal/google_analytics.html" . }}
