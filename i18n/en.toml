@@ -1,4 +1,6 @@
-[keyword]
-other = "Keyword"
+[tag]
+other = "Tags"
 [builtwithlove]
 other = "Built with love"
+[morepost]
+other = "More posts"

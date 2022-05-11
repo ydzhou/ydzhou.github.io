@@ -6,7 +6,7 @@ defaultContentLanguage = 'zh'
 
 [params]
 mainSections = ['tech', 'random']
-paginationSize = 5
+paginationSize = 6
 
 [languages]
 [languages.zh]
