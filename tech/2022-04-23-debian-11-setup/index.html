@@ -8,4 +8,4 @@
 </code></pre><p>因为 Ubuntu 是基于 Debian unstable，理论上 Debian testing 稳定性已经超过了许多发行版，可以放心使用。</p><h3 id=nvidia-显卡>Nvidia 显卡</h3><p>没办法，N 卡开源驱动太拉垮，不能糟蹋了 money。</p><p>先确保你配置了 <code>non-free</code> repo，然后运行 <code>sudo apt install nvidia-detect</code>。</p><p>再运行 <code>nvidia-detect</code> 并根据提示选择对应驱动安装。</p><h2 id=开发环境配置>开发环境配置</h2><h3 id=pyenv>Pyenv</h3><p>我使用 <code>pyenv</code> 管理 python 版本。</p><p>通过 <a href=https://github.com/pyenv/pyenv-installer>pyenv installer</a> 来安装，</p><pre tabindex=0><code>curl https://pyenv.run | bash
 </code></pre><p>安装结束后，你需要添加 <code>pyenv</code> 到 <code>PATH</code>,</p><pre tabindex=0><code>$(pyenv root)/shims:/usr/local/bin:/usr/bin:/bin
 </code></pre><p><code>openssl</code> 需要事先装好才能安装 python，</p><pre tabindex=0><code>sudo apt install libssl-dev
-</code></pre><div class=go-back><a href=https://ydzhou.github.io/>&lt;&lt;&lt; Go back</a></div></main></div><div id=footer-section>2023 @ Y Zhou | 用心呵护 | <a href=https://github.com/ydzhou>Github</a> | <a href=https://linkedin.com/in/ydotzhou>Linkedin</a></div></body></html>
+</code></pre><div class=go-back><a href=https://ydzhou.github.io/>&lt;&lt;&lt; Go back</a></div></main></div></body></html>
