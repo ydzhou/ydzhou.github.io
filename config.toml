@@ -20,11 +20,6 @@ title = 'Nothing Owned'
 weight = 2
 
 [[languages.zh.menu.main]]
-name = "主页"
-url = "/"
-weight = 1
-
-[[languages.zh.menu.main]]
 name = "技术"
 url = "/tech"
 weight = 2
@@ -38,11 +33,6 @@ weight = 3
 name = "关于"
 url = "/about"
 weight = 4
-
-[[languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
 
 [[languages.en.menu.main]]
 name = "Tech"

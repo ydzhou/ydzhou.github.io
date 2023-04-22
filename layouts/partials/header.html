@@ -1,23 +1,29 @@
 <header>
-    <div id="header-section">
+  <div id="header-section">
     <div class="nav">
-	<div class="nav-left">
-		<a class="link" href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a>
-    </div>
-    <nav>
-	<div class="nav-right">
+	  <div class="nav-left">
+		<!-- <h1><a class="link" href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a></h1> -->
+        <pre><code>
+ _  _     _   _    _              ___                     _ 
+| \| |___| |_| |_ (_)_ _  __ _   / _ \__ __ ___ _  ___ __| |
+| .` / _ \  _| ' \| | ' \/ _` | | (_) \ V  V / ' \/ -_) _` |
+|_|\_\___/\__|_||_|_|_||_\__, |  \___/ \_/\_/|_||_\___\__,_|
+                         |___/                              
+        </code></pre>
+      </div>
+ 
+	  <div class="nav-right">
 		{{ range .Site.Menus.main }}
 		<a class="link" href="{{ .URL | absLangURL }}">{{ .Name }}</a> |
 		{{ end }}
         {{ $currLang := .Site.Language.Lang }}
         {{ range $.Site.Home.AllTranslations }}
-            {{ if ne .Lang $currLang }}
-            <a class="link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-            {{ end }}
+        {{ if ne .Lang $currLang }}
+        <a class="link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
         {{ end }}
+        {{ end }}
+      </div>
+ 
     </div>
-    </nav>
-    </div>
-    <hr>
-    </div>
+  </div>
 </header>
