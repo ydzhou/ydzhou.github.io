@@ -16,6 +16,10 @@ ul {
     margin-top: 30px;
 }
 
+.post-listing {
+    margin-top: 50px;
+}
+
 .post-listing h2 {
     font-weight: normal;
 }
