@@ -20,6 +20,18 @@ ul {
     font-weight: normal;
 }
 
+.post-listing h3 {
+    font-weight: normal;
+}
+
+.post-listing .title {
+    margin-bottom: -40px;
+}
+
+.post-listing .description {
+    color: #6e6e6e;
+}
+
 .link {
     text-decoration: none;
     background-color: none;
@@ -48,7 +60,7 @@ body {
     font-size: 12pt;
     line-height: 1.6;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 code {
@@ -74,11 +86,9 @@ img {
 }
 
 .nav-left {
-    float: left;
 }
 
 .nav-right {
-    float: right;
 }
 
 #footer-section {
