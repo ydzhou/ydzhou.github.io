@@ -48,7 +48,7 @@ systemctl start iwd
 [iwd]# device wlan0 set-property Powered on
 [iwd]# station wlan0 scan
 [iwd]# station wlan0 get-networks
-[iwd]# station wlan0 device connect {SSID}
+[iwd]# station wlan0 connect {SSID}
 ```
 
 `wlan0` 是你的网卡设备，可能名称会不同。 
