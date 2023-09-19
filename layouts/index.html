@@ -10,39 +10,30 @@
 		  <p>{{ .Site.Params.Subtitle | markdownify }}</p>
 		  {{- end -}}
 		</div>
-        <div>
-          {{ i18n "keyword" }}:
-          <ul>
-            {{ range .Site.Taxonomies.tags }}
-            <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }}), 
-            {{ end }}
-          </ul>
-        </div>
-        <div class="post-listing">
+        <!-- <div> -->
+        <!--   {{ i18n "keyword" }}: -->
+        <!--   <ul> -->
+        <!--     {{ range .Site.Taxonomies.tags }} -->
+        <!--     <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }}),  -->
+        <!--     {{ end }} -->
+        <!--   </ul> -->
+        <!-- </div> -->
+        <table class="post-listing">
 		  {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
           {{ $paginationSize := .Site.Params.paginationSize }}
           {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) $paginationSize }}
 		  {{ range $paginator.Pages }}
 		  <section>
-            <div class="title">
-			  <h3>
-                <time>{{ dateFormat "Jan, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time> | 
-                <a class="link" href="{{ .RelPermalink }}">{{.Title}}</a>
-              </h3>
-            </div>
-			<br>
-            <div class="description">
-			  {{ if isset .Params "description" }}
-			  {{ .Description }}
-			  {{ else }}
-			  {{ .Summary }}&hellip;
-			  {{ end }}
-			</div>
+            <tr>
+              <td class="date"><time>{{ dateFormat "Jan 2006" .Date }}</time></td>
+              <td><a class="link" href="{{ .RelPermalink }}">{{.Title}}</a></td>
+            </tr>
 		  </section>
 		  {{ end }}
 		  {{ template "partials/paginator.html" . }}
-        </div>
+        </table>
 	  </main>
 	</div>
+    {{ partial "footer.html" . }}
   </body>
 </html>
