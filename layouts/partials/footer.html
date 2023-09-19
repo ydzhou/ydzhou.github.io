@@ -1,3 +1,12 @@
 <div id="footer-section">
-    2023 @ Y Zhou | {{ i18n "builtwithlove" }} | <a href="https://github.com/ydzhou">Github</a> | <a href="https://linkedin.com/in/ydotzhou">Linkedin</a>
+
+  2023 @ yz | &#9829 | <a href="https://github.com/ydzhou">Github</a> |
+  
+        {{ $currLang := .Site.Language.Lang }}
+        {{ range $.Site.Home.AllTranslations }}
+        {{ if ne .Lang $currLang }}
+        <a class="link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        {{ end }}
+        {{ end }}
+
 </div>

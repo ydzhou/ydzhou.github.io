@@ -2,49 +2,49 @@ baseURL = 'https://ydzhou.github.io'
 languageCode = 'en-us'
 hasCJKLanguage = true
 googleAnalytics = 'G-NGR0WHS7KP'
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'zh'
 
 [params]
-mainSections = ['tech', 'random']
+mainSections = ['notes']
 paginationSize = 5
 
 [languages]
 [languages.zh]
-languageName = '🇨🇳中文'
+languageName = '🇨🇳'
 title = '一无所有地流浪'
 weight = 1
 
 [languages.en]
-languageName = '🇺🇸English'
+languageName = '🇺🇸'
 title = 'Nothing Owned'
 weight = 2
 
-[[languages.zh.menu.main]]
-name = "技术"
-url = "/tech"
-weight = 2
+# [[languages.zh.menu.main]]
+# name = "技术"
+# url = "/tech"
+# weight = 2
 
-[[languages.zh.menu.main]]
-name = "闲扯"
-url = "/random"
-weight = 3
+# [[languages.zh.menu.main]]
+# name = "闲扯"
+# url = "/random"
+# weight = 3
 
-[[languages.zh.menu.main]]
-name = "关于"
-url = "/about"
-weight = 4
+# [[languages.zh.menu.main]]
+# name = "关于"
+# url = "/about"
+# weight = 4
 
-[[languages.en.menu.main]]
-name = "Tech"
-url = "/tech"
-weight = 2
+# [[languages.en.menu.main]]
+# name = "Tech"
+# url = "/tech"
+# weight = 2
 
-[[languages.en.menu.main]]
-name = "Random"
-url = "/random"
-weight = 3
+# [[languages.en.menu.main]]
+# name = "Random"
+# url = "/random"
+# weight = 3
 
-[[languages.en.menu.main]]
-name = "About"
-url = "/about"
-weight = 4
+# [[languages.en.menu.main]]
+# name = "About"
+# url = "/about"
+# weight = 4
