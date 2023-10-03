@@ -39,7 +39,7 @@ ul {
 .post-listing .date {
     color: #6e6e6e;
     font-style: italic;
-    width: 35%;
+    padding-right: 20px;
 }
 
 .link {
