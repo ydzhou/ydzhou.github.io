@@ -3,16 +3,16 @@ title: Time Long Past
 date: 2007-11-12
 ---
 
-In his boyhood, he fancy oversized K-pop clothing and blood-racing video games. He fancy climbing over the high walls, on a barren hill, looking above the sky and drinking a bottle of $1 water. He fancy scoring the point over the old rim and fancy big-plays like T-Mac.
+A young boy fancy oversized K-pop clothes, blood-racing video games, climbing over the walls, on a barren hill, looking above the sky while drinking a bottle of one dollar water. He found joys playing big score over rusty rims, imagining himeself being T-Mac.
 
-When school was off, he grabbed the beat-up bag, running furiously, running to every places he was deeply bound to. He showed up in dim video-game rooms, rowdy basketball field, and teachers' offices. Youth is always indulged with many enchating things. Those days slowly went away.
+Once school was off, grabbing the beat-up bag, furiously, longingly, hurriedly, he run. He showed up in dim-light video-game rooms, rowdy basketball fields, and teachers' offices. Youth is always enchated with endless curiosity and passion. Days march slowly like the north star saling on the night-sea, cheers, tears and yellings turbulating around its course.
 
-It's after two years, he started liking the figure over neon lights, fancy holding her hand in a windy Summer day and drinking a cup of sago. He dazed through days, reading her messages, with a heart full of love, word by word. He grew up a little. He seems knowing the change of seasons. He finished Rush to the Dead Summer and Ice Fantasy. As well he had a pair of names carved on a Camphor tree.
+Two years later, one figure over neon lights touched his heart, like sunlight touching the blindness, bright,  joyful and dazing. He fancy holding her hand in a windy Summer day and drinking a cup of sago. Her messages became his seconds and minutes, his days and nights, his everything and nothing. He grew up. Change of seasons he started sensing, Rush to the Dead Summer and Ice Fantasy he finished reading. A pair of names is carved on a Camphor tree.
 
-They broke up a year later. He made the choice. He started having those wistful affection, weird dreams and writing sentimental poems. He learned smoking. The cigar smoke cut through the lung while wounded heart bled. He seldom talked, indulged with puzzls, playing clumsily.
+When Summer came, they broke up just as when Summer came they fell into love. It was a bitter call he made. Those wistful affection, wild dreams, sentimental poems came into his young mind. He learned to smoke. The smoke aired through his lung. He seldom talked, playing with puzzls quite often, playing clumsily.
 
-Years past, many more falls into his liking.
+Many things enthralled, many years passed by.
 
-We met again when I took a long trip back home. A mid-age men, half bald and loosely dressed, yelled at some student-looking person. I only recognized him until walked closely. I heard he is living a rough, divorced and unkempt life.
+We met again during my long trip back home. A mid-age man, half bald and loosely dressed, was yelling at some student-looking one. I only recognized him until walked closely. I heard that he is living a rough, divorced and unkempt life.
 
-What he was once obssessed with may have been already forgotten. Will stars wandering in the pale sky echo his wistful memory in a sleepless night? Time is a train, rushing through every station of the moments of your life. When you steps on one train, you missed the others, and you can never head back. Rails rattling, time long past faded away over the distant horizon.
+Forgotten, may be the things he once fancy. In a sleepless night, will stars wandering over the pale sky echo the wistful memory of his youth? Time is a train, rushing through the moments of your life. You steps into one and you missed the rest. Never heading back, rail rattling, days faded away over that bright, distant horizon.
