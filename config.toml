@@ -5,7 +5,7 @@ googleAnalytics = 'G-NGR0WHS7KP'
 defaultContentLanguage = 'en'
 
 [params]
-mainSections = ['random']
+mainSections = ['tech']
 paginationSize = 5
 
 [languages]
