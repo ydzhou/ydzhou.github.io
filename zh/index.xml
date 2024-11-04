@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>一无所有地流浪</title><link>https://ydzhou.github.io/zh/</link><description>Recent content on 一无所有地流浪</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ydzhou.github.io/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>青柠树</title><link>https://ydzhou.github.io/zh/random/citrus-tree/</link><pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/random/citrus-tree/</guid><description>秋末，我买了一株青柠树。我把它安置在了靠南的窗户边。它不到半米高，纤细的树枝上，墨绿的叶子浅浅挂着，下面铺了层枣褐色的坚果壳。 从十一月起，天</description></item><item><title/><link>https://ydzhou.github.io/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/about/</guid><description>哈啰 我居住在西海岸的一个渔村。 我是一名后端软件工程师。我从事的方向是关于云计算的基础架构。 我参与的项目包括了，系统观测，边缘计算和服务通信等</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>一无所有地流浪</title><link>https://ydzhou.github.io/zh/</link><description>Recent content on 一无所有地流浪</description><generator>Hugo</generator><language>zh</language><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ydzhou.github.io/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>用 Go 写一个你自己的 Nano</title><link>https://ydzhou.github.io/zh/tech/2021-01-07-ste/</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/tech/2021-01-07-ste/</guid><description>&lt;p>我编写了一个简单的面向 terminal 的&lt;a href="https://github.com/ydzhou/ste">文本编辑器&lt;/a>.&lt;/p>
+&lt;h2 id="设计">设计&lt;/h2>
+&lt;p>和 MVC 设计类似，一个编辑器含有三个独立的模块：&lt;/p>
+&lt;ol>
+&lt;li>controller：处理键盘输入&lt;/li>
+&lt;li>model：存储文档并运行主要逻辑&lt;/li>
+&lt;li>view：渲染编辑器界面和文档&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img alt="Overview" src="https://ydzhou.github.io/ste0.svg">&lt;/p></description></item><item><title>Flatdom，模拟文明的兴衰</title><link>https://ydzhou.github.io/zh/tech/2015-02-23-flatdom/</link><pubDate>Mon, 23 Feb 2015 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/tech/2015-02-23-flatdom/</guid><description>&lt;p>古往今来，任何一个文明都不可避免地经历着一个过程，从最开始零散的部落开拓荒蛮之地，发展到广袤疆域，大城重镇的盛世，最终在天灾人祸战乱中衰落。Flatdom 的目的就是尽可能地去模拟这个过程。&lt;/p></description></item><item><title/><link>https://ydzhou.github.io/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/about/</guid><description>&lt;p>哈啰&lt;/p>
+&lt;p>我居住在西海岸的一个渔村。&lt;/p>
+&lt;p>我是一名后端软件工程师。我从事的方向是关于云计算的基础架构。&lt;/p>
+&lt;p>我参与的项目包括了，系统观测，边缘计算和服务通信等。&lt;/p>
+&lt;p>工作之余，我喜欢捣腾一些有的没的。我会把其中有意思的东西分享在这里。&lt;/p></description></item></channel></rss>

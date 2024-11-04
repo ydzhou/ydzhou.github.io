@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on Nothing Owned</title><link>https://ydzhou.github.io/tags/go/</link><description>Recent content in Go on Nothing Owned</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ydzhou.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>A simple terminal text editor written in Go</title><link>https://ydzhou.github.io/tech/2021-01-07-ste/</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/tech/2021-01-07-ste/</guid><description>&lt;p>I build a simple text editor in the terminal &lt;a href="https://github.com/ydzhou/ste">here&lt;/a>.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>Similar to MVC pattern, a text editor has three independent modules:&lt;/p>
+&lt;ol>
+&lt;li>controller: to handle customer keyboard input and dispatch for further processing.&lt;/li>
+&lt;li>model: to store what customer is working on and process necessary business logic.&lt;/li>
+&lt;li>view: to render user interface of the editor&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img alt="Overview" src="https://ydzhou.github.io/ste0.svg">&lt;/p>
+&lt;p>You can think of the editor is in an infinite loop. First we clear the screen and render the viewable text document content in &lt;code>stdout&lt;/code>. The content view is decided by the position of the cursor and the size of the terminal screen. Then we listen on the key input at &lt;code>stdin&lt;/code> in order to modify the text document or execute corresponding commands.&lt;/p></description></item></channel></rss>
