@@ -6,7 +6,7 @@
 &lt;li>model：存储文档并运行主要逻辑&lt;/li>
 &lt;li>view：渲染编辑器界面和文档&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img alt="Overview" src="https://ydzhou.github.io/ste0.svg">&lt;/p></description></item><item><title>Flatdom，模拟文明的兴衰</title><link>https://ydzhou.github.io/zh/tech/2015-02-23-flatdom/</link><pubDate>Mon, 23 Feb 2015 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/tech/2015-02-23-flatdom/</guid><description>&lt;p>古往今来，任何一个文明都不可避免地经历着一个过程，从最开始零散的部落开拓荒蛮之地，发展到广袤疆域，大城重镇的盛世，最终在天灾人祸战乱中衰落。Flatdom 的目的就是尽可能地去模拟这个过程。&lt;/p></description></item><item><title/><link>https://ydzhou.github.io/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/about/</guid><description>&lt;p>哈啰&lt;/p>
+&lt;p>&lt;img src="https://ydzhou.github.io/ste0.svg" alt="Overview">&lt;/p></description></item><item><title>Flatdom，模拟文明的兴衰</title><link>https://ydzhou.github.io/zh/tech/2015-02-23-flatdom/</link><pubDate>Mon, 23 Feb 2015 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/tech/2015-02-23-flatdom/</guid><description>&lt;p>古往今来，任何一个文明都不可避免地经历着一个过程，从最开始零散的部落开拓荒蛮之地，发展到广袤疆域，大城重镇的盛世，最终在天灾人祸战乱中衰落。Flatdom 的目的就是尽可能地去模拟这个过程。&lt;/p></description></item><item><title/><link>https://ydzhou.github.io/zh/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/zh/about/</guid><description>&lt;p>哈啰&lt;/p>
 &lt;p>我居住在西海岸的一个渔村。&lt;/p>
 &lt;p>我是一名后端软件工程师。我从事的方向是关于云计算的基础架构。&lt;/p>
 &lt;p>我参与的项目包括了，系统观测，边缘计算和服务通信等。&lt;/p>

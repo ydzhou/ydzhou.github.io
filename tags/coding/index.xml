@@ -6,7 +6,7 @@
 &lt;li>model: to store what customer is working on and process necessary business logic.&lt;/li>
 &lt;li>view: to render user interface of the editor&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img alt="Overview" src="https://ydzhou.github.io/ste0.svg">&lt;/p>
+&lt;p>&lt;img src="https://ydzhou.github.io/ste0.svg" alt="Overview">&lt;/p>
 &lt;p>You can think of the editor is in an infinite loop. First we clear the screen and render the viewable text document content in &lt;code>stdout&lt;/code>. The content view is decided by the position of the cursor and the size of the terminal screen. Then we listen on the key input at &lt;code>stdin&lt;/code> in order to modify the text document or execute corresponding commands.&lt;/p></description></item><item><title>Flatdom, a civilization simulator</title><link>https://ydzhou.github.io/tech/2015-02-23-flatdom/</link><pubDate>Mon, 23 Feb 2015 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/tech/2015-02-23-flatdom/</guid><description>&lt;h2 id="why">Why？&lt;/h2>
 &lt;p>Any civilization is evitably strangled in a process where it starts with exploring into the wild land, then settling, developing to its most high, and eventually fallen by the warfare or other misfortune. I am deeply curious about such process and try to simulate it. For simplicity, there are only three types of events in Flatdom, exploration, development and war.&lt;/p>
 &lt;h2 id="what-is-flatdom">What is Flatdom?&lt;/h2>

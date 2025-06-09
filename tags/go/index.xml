@@ -6,5 +6,5 @@
 &lt;li>model: to store what customer is working on and process necessary business logic.&lt;/li>
 &lt;li>view: to render user interface of the editor&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img alt="Overview" src="https://ydzhou.github.io/ste0.svg">&lt;/p>
+&lt;p>&lt;img src="https://ydzhou.github.io/ste0.svg" alt="Overview">&lt;/p>
 &lt;p>You can think of the editor is in an infinite loop. First we clear the screen and render the viewable text document content in &lt;code>stdout&lt;/code>. The content view is decided by the position of the cursor and the size of the terminal screen. Then we listen on the key input at &lt;code>stdin&lt;/code> in order to modify the text document or execute corresponding commands.&lt;/p></description></item></channel></rss>
