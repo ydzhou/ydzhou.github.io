@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on nothingowned</title><link>https://ydzhou.github.io/tags/go/</link><description>Recent content in Go on nothingowned</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ydzhou.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>A simple terminal text editor written in Go</title><link>https://ydzhou.github.io/tech/2021-01-07-ste/</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/tech/2021-01-07-ste/</guid><description>&lt;p&gt;I build a simple text editor in the terminal.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on nothingowned</title><link>https://ydzhou.github.io/tags/go/</link><description>Recent content in Go on nothingowned</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ydzhou.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>A simple terminal text editor written in Go</title><link>https://ydzhou.github.io/tech/2021-01-07-ste/</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://ydzhou.github.io/tech/2021-01-07-ste/</guid><description>&lt;p&gt;I made a simple text editor on the terminal.&lt;/p&gt;
 &lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Similar to MVC pattern, a text editor has three independent modules:&lt;/p&gt;
+&lt;p&gt;A text editor has three modules:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;controller: to handle customer keyboard input and dispatch for further processing.&lt;/li&gt;
-&lt;li&gt;model: to store what customer is working on and process necessary business logic.&lt;/li&gt;
-&lt;li&gt;view: to render user interface of the editor&lt;/li&gt;
+&lt;li&gt;controller: to handle customers&amp;rsquo; keyboard inputs and to dispatch for further processing.&lt;/li&gt;
+&lt;li&gt;model: to store what customers are working on and to process necessary business logic.&lt;/li&gt;
+&lt;li&gt;view: to render the user interface.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src="https://ydzhou.github.io/ste0.svg" alt="Overview"&gt;&lt;/p&gt;
-&lt;p&gt;You can think of the editor is in an infinite loop. First we clear the screen and render the viewable text document content in &lt;code&gt;stdout&lt;/code&gt;. The content view is decided by the position of the cursor and the size of the terminal screen. Then we listen on the key input at &lt;code&gt;stdin&lt;/code&gt; in order to modify the text document or execute corresponding commands.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;The text editor runs in an infinite loop. First we clear the screen and render the document content to &lt;code&gt;stdout&lt;/code&gt;. Which part of content to display is decided by current position of the cursor and the size of the terminal screen. We then listen on the key input at &lt;code&gt;stdin&lt;/code&gt; so that we can process Users&amp;rsquo; commands.&lt;/p&gt;</description></item></channel></rss>
