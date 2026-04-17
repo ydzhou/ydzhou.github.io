@@ -9,12 +9,7 @@ mainSections = ['tech']
 paginationSize = 5
 
 [languages]
-[languages.zh]
-languageName = '🇨🇳'
-title = '一无所有地流浪'
-weight = 1
-
 [languages.en]
 languageName = '🇺🇸'
-title = 'Nothing Owned'
-weight = 2
+title = 'nothingowned'
+weight = 1
